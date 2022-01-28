@@ -42,7 +42,7 @@ const ForgetPassword = () => {
                 </div>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                   <Link className="forget-password-link" to="/">
-                    Forget your password?
+                    Back to Login Page
                   </Link>
                 </Form.Group>
                 <div className="login-powerd-by">Powerd by UD</div>
