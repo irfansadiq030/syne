@@ -105,13 +105,14 @@
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   .Login-container {
     background-color: white;
+    height: 0vh;
   }
 
   .left-side {
     display: none;
   }
   .right-side {
-    /* margin-top: 150px !important; */
+    margin-top: 150px !important;
   }
   .syne-Logo-image {
     margin-top: 30px;
