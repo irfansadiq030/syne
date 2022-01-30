@@ -49,9 +49,11 @@ const Login = () => {
                   </Link>
                 </Form.Group>
                 <div className="login-submit-btn-div">
-                  <Button className="login-submit-btn" type="submit">
-                    Login
-                  </Button>
+                  <Link to="/quotation">
+                    <Button className="login-submit-btn" type="submit">
+                      Login
+                    </Button>
+                  </Link>
                 </div>
                 <div className="login-powerd-by">Powerd by UD</div>
               </Form>
