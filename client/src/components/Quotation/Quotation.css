@@ -71,20 +71,19 @@
   width: 18px;
   height: 18px;
 }
-
-@media screen and (max-width: 960px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
   .quotation-menu {
     display: grid;
-    grid-template-columns: 20% 70%;
-    gap: 10%;
+    grid-template-columns: 100%;
+    gap: 5%;
   }
 
   .quote-left-side {
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 20px;
   }
   .table-scroll {
-    width: 470px;
+    width: 350px;
 
     overflow-x: auto;
     overflow-y: scroll;
