@@ -18,7 +18,7 @@ import company from "../../images/edit-primary.svg";
 const QuotationId = () => {
   return (
     <Container fluid className="quotation-top">
-      <Row>
+      <Row className="quotation-top-row">
         <Col lg={2}>
           <h4>
             QUOTE: <span>3744</span>{" "}
@@ -92,13 +92,13 @@ const QuotationId = () => {
                 + Create Invoice
               </button>
             </div>
-            <div class="btn-group">
-              <div class="form-group mb-0 w-100">
+            <div className="btn-group">
+              <div className="form-group mb-0 w-100">
                 <select
                   value="Draft"
-                  class="form-control form-control-sm text-white font-weight-bold status"
+                  className="form-control form-control-sm text-dark  font-weight-bold status"
                 >
-                  <option value="Draft" selected class="bg-secondary">
+                  <option value="Draft" selected class="bg-primary">
                     Draft
                   </option>
                   <option value="Sent" class="bg-primary">
@@ -239,6 +239,58 @@ const QuotationId = () => {
             </Col>
           </Row>
         </div>
+      </Container>
+      <Container className="mt-5">
+        <Row>
+          <Col xs={3} lg={2}>
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-sm font-weight-bold text-white btn-success"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                + Add Products
+              </button>
+            </div>
+          </Col>
+          <Col xs={3} lg={6}>
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-sm font-weight-bold text-white btn-warning"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                + Add Bespoke
+              </button>
+            </div>
+          </Col>
+          <Col xs={3} lg={2} className="saveChanges-btn">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-sm font-weight-bold text-white btn-success"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Save Changes
+              </button>
+            </div>
+          </Col>
+          <Col xs={3} lg={2}>
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-sm font-weight-bold text-black btn-light"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Close
+              </button>
+            </div>
+          </Col>
+        </Row>
       </Container>
 
       <div className="h-100 mt-5">

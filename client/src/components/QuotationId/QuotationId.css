@@ -1,6 +1,9 @@
 .quotation-top {
   margin-top: 20px;
 }
+.quotation-top-row {
+  margin-bottom: 10px;
+}
 /* .quotation-id-button {
   display: flex;
   justify-content: space-between;
