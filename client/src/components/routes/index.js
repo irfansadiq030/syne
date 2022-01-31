@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import ForgetPasswordPage from "../../pages/ForgetPasswordPage";
 import LoginPage from "../../pages/LoginPage";
 import QuotationPage from "../../pages/QuotationPage";
+import QuotationPageId from "../../pages/QuotationPageId";
 import Navbar from "../Navbar/Navbar";
 
 const AllRoutes = () => {
@@ -16,6 +17,7 @@ const AllRoutes = () => {
       <Navbar />
       <Routes>
         <Route path="/quotation" element={<QuotationPage />} />
+        <Route path="/quotation/:id" element={<QuotationPageId />} />
       </Routes>
     </>
   );

@@ -84,8 +84,9 @@
     background: #242222;
     left: 0;
     /* opacity: 1; */
+    position: absolute;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 1 !important;
   }
   .nav-item {
     width: 100%;

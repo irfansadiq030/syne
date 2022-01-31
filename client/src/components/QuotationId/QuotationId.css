@@ -1,0 +1,96 @@
+.quotation-top {
+  margin-top: 20px;
+}
+/* .quotation-id-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+} */
+.h5-quotation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+
+  color: #8f8f8f;
+}
+.quotation-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.quotation-menu-item {
+  list-style-type: none;
+}
+.quotation-datepicker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quote-left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.5rem;
+}
+.quotation-left-button {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.quotation-left-button > span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #ffffff;
+}
+.quotation-left-button:nth-child(2) {
+  background-color: #324a5d !important;
+}
+.quotation-left-button:nth-child(4) {
+  background-color: #39ca75 !important;
+}
+.quotation-left-button:nth-child(5) {
+  background-color: #ca54a8 !important;
+}
+.quotation-left-button:nth-child(6) {
+  background-color: #999868 !important;
+}
+.quotation-table-head {
+  background-color: #0080b8;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.item-per-page-table {
+  width: 180px !important;
+}
+.quotation-check-icon {
+  width: 18px;
+  height: 18px;
+}
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  .quotation-menu {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 5%;
+  }
+
+  .quote-left-side {
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+  .table-scroll {
+    width: 350px;
+
+    overflow-x: auto;
+    overflow-y: scroll;
+  }
+}
