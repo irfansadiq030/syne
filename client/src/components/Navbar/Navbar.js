@@ -16,8 +16,12 @@ const Navbar = () => {
         <i className={click ? "fas fa-times" : "fas fa-bars"} />
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li className="nav-item">Quote</li>
-        <li className="nav-item">Jobs</li>
+        <Link to="/quotation" className="Nav__item__Link">
+          <li className="nav-item">Quote</li>
+        </Link>
+        <Link to="/jobs" className="Nav__item__Link">
+          <li className="nav-item">Jobs</li>
+        </Link>
         <li className="nav-item">Invoice</li>
         <li className="nav-item">Product </li>
         <li class="nav-item dropdown">

@@ -63,8 +63,8 @@
 .quotation-left-button:nth-child(6) {
   background-color: #999868 !important;
 }
-.quotation-table-head {
-  background-color: #0080b8;
+.jobsid__table__head {
+  background-color: #f57e24;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -104,7 +104,7 @@
   border-radius: 27px;
 }
 .Bespole__modal__heading {
-  margin-left: 35%;
+  margin-left: 30%;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;

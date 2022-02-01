@@ -1,5 +1,5 @@
 import React from "react";
-import "./QuotationId.css";
+import "./JobsId.css";
 import { Col, Row, Container, Table } from "react-bootstrap";
 import quickpdf from "../../images/pdf-icon.svg";
 // import checkicon from "../../images/check-square.svg";
@@ -9,13 +9,13 @@ import editicon from "../../images/edit-primary.svg";
 import Delete_icon from "../../images/Delete_icon.svg";
 import { Link } from "react-router-dom";
 import image_vector from "../../images/image_vector.svg";
-const QuotationId = () => {
+const JobsId = () => {
   return (
     <Container fluid className="quotation-top">
       <Row className="quotation-top-row">
         <Col lg={2}>
           <h4>
-            QUOTE: <span>3744</span>{" "}
+            JOB: <span>3744</span>{" "}
           </h4>
         </Col>
         <Col lg={10}>
@@ -120,7 +120,7 @@ const QuotationId = () => {
               <form className="px-5">
                 <div class="form-group ">
                   <label for="date-input" class="font-weight-bold">
-                    Date Quoted
+                    Date Jobs
                   </label>
                   <div class="w-100 d-flex align-items-center gap-1">
                     <input
@@ -238,7 +238,7 @@ const QuotationId = () => {
         <Row>
           <Col xs={3} lg={2}>
             <div class="btn-group">
-              <Link to="/quotation/addproduct">
+              <Link to="/jobs/addproduct">
                 <button
                   type="button"
                   class="btn btn-sm font-weight-bold text-white btn-success"
@@ -542,7 +542,7 @@ const QuotationId = () => {
           <Col md={12}>
             <div className="table-scroll">
               <Table striped bordered hover className="quotation-table">
-                <thead className="quotation-table-head">
+                <thead className="jobsid__table__head">
                   {/* <tr>
                     <th>Items Information</th>
                     <th>Items Price</th>
@@ -799,4 +799,4 @@ const QuotationId = () => {
   );
 };
 
-export default QuotationId;
+export default JobsId;

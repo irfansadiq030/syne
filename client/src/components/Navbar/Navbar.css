@@ -18,6 +18,9 @@
   justify-content: flex-end;
   flex-grow: 3;
 } */
+.Nav__item__Link {
+  text-decoration: none;
+}
 
 .dropdown-content {
   display: none;
@@ -88,9 +91,10 @@
     transition: all 0.5s ease;
     z-index: 1 !important;
   }
-  .nav-item {
-    width: 100%;
-  }
+  /* .nav-item {
+    width: 200%;
+  } */
+
   .menu-icon {
     display: block;
     position: absolute;
