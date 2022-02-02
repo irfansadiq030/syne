@@ -4,20 +4,20 @@
 .quotation-top-row {
   margin-bottom: 10px;
 }
-.Adding__Jobs__Leftside {
+.Adding__Invoice__Leftside {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 35px;
 
-  color: #f57e24;
+  color: #00a35d;
 }
-.Adding__Jobs__back__btn,
-.Adding__Jobs__reset__btn,
-.Adding__Jobs__search__btn,
-.Adding__Jobs__clear__btn {
-  background-color: #f57e24 !important;
+.Adding__Invoice__back__btn,
+.Adding__Invoice__reset__btn,
+.Adding__Invoice__search__btn,
+.Adding__Invoice__clear__btn {
+  background-color: #00a35d !important;
 }
 .Adding__Product__number {
   color: black;
@@ -41,11 +41,10 @@
 }
 .Item__List__dropdown__category {
   background-color: #f3f3f3 !important;
-  min-width: 130px !important;
+  min-width: 200px !important;
   display: flex !important;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid red !important; */
 }
 .minmax__Price {
   display: flex;
@@ -73,8 +72,8 @@
   background-color: #00a35d !important;
   border-radius: 8px;
 }
-.Add__job__table__head {
-  background-color: #f57e24;
+.Add__Invoice__table__head {
+  background-color: #00a35d;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;

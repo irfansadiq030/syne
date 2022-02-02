@@ -1,5 +1,5 @@
 import React from "react";
-import "./JobsId.css";
+import "./InvoiceId.css";
 import { Col, Row, Container, Table } from "react-bootstrap";
 import quickpdf from "../../images/pdf-icon.svg";
 // import checkicon from "../../images/check-square.svg";
@@ -9,13 +9,13 @@ import editicon from "../../images/edit-primary.svg";
 import Delete_icon from "../../images/Delete_icon.svg";
 import { Link } from "react-router-dom";
 import image_vector from "../../images/image_vector.svg";
-const JobsId = () => {
+const InvoiceId = () => {
   return (
     <Container fluid className="quotation-top">
       <Row className="quotation-top-row">
         <Col lg={2}>
-          <h4>
-            JOB: <span>3744</span>{" "}
+          <h4 className="text-success font-weight-bold">
+            Invoice: <span className="text-dark">3744</span>{" "}
           </h4>
         </Col>
         <Col lg={10}>
@@ -238,7 +238,7 @@ const JobsId = () => {
         <Row>
           <Col xs={3} lg={2}>
             <div class="btn-group">
-              <Link to="/jobs/addproduct">
+              <Link to="/invoice/addproduct">
                 <button
                   type="button"
                   class="btn btn-sm font-weight-bold text-white btn-success"
@@ -256,7 +256,7 @@ const JobsId = () => {
                 type="button"
                 class="btn btn-sm font-weight-bold text-white btn-warning"
                 data-toggle="modal"
-                data-target="#bespokeadd"
+                data-target="#exampleModalCenter"
               >
                 + Add Bespoke
               </button>
@@ -264,7 +264,7 @@ const JobsId = () => {
 
             <div
               className="modal fade  "
-              id="bespokeadd"
+              id="exampleModalCenter"
               tabindex="-1"
               role="dialog"
               aria-labelledby="exampleModalCenterTitle"
@@ -542,7 +542,7 @@ const JobsId = () => {
           <Col md={12}>
             <div className="table-scroll">
               <Table striped bordered hover className="quotation-table">
-                <thead className="jobsid__table__head">
+                <thead className="Invoiceid__table__head">
                   {/* <tr>
                     <th>Items Information</th>
                     <th>Items Price</th>
@@ -587,12 +587,7 @@ const JobsId = () => {
                     <td>20%</td>
                     <td>
                       <div className="quotation__editdelete_icon">
-                        <img
-                          src={editicon}
-                          alt="editicon"
-                          data-toggle="modal"
-                          data-target="#bespokeadd"
-                        />
+                        <img src={editicon} alt="editicon" />
                         <img
                           src={Delete_icon}
                           data-toggle="modal"
@@ -614,7 +609,7 @@ const JobsId = () => {
                           >
                             <div className="modal-content p-3">
                               <div className="delete__modal__text">
-                                <div>Items code: Q3766</div>
+                                <div>Company: Dumy</div>
                                 <div>Are you Sure you want to Delete ?</div>
                               </div>
                               <div className="delete__modal__button__div">
@@ -800,4 +795,4 @@ const JobsId = () => {
   );
 };
 
-export default JobsId;
+export default InvoiceId;

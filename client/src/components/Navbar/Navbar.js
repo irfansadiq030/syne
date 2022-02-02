@@ -22,15 +22,16 @@ const Navbar = () => {
         <Link to="/jobs" className="Nav__item__Link">
           <li className="nav-item">Jobs</li>
         </Link>
-        <li className="nav-item">Invoice</li>
+        <Link to="/invoice" className="Nav__item__Link">
+          <li className="nav-item">Invoice</li>
+        </Link>
         <li className="nav-item">Product </li>
         <li class="nav-item dropdown">
           <div className="dropdown">
             Database <i className="fas fa-caret-down" />
             <div className="dropdown-content">
-              <a href="/">Database1</a>
-              <a href="/">Database1</a>
-              <a href="/">Database1</a>
+              <Link to="/companies">Companies</Link>
+              <Link to="/contacts">Contacts</Link>
             </div>
           </div>
         </li>

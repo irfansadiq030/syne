@@ -264,7 +264,7 @@ const QuotationId = () => {
 
             <div
               className="modal fade  "
-              id="exampleModalCenter"
+              id="bespokeadd"
               tabindex="-1"
               role="dialog"
               aria-labelledby="exampleModalCenterTitle"
@@ -278,7 +278,7 @@ const QuotationId = () => {
                   <div className="modal-header  ">
                     <h5
                       className="modal-title Bespole__modal__heading"
-                      id="exampleModalCenterTitle"
+                      id="bespokeadd"
                     >
                       Add New Bespoke
                     </h5>
@@ -587,17 +587,18 @@ const QuotationId = () => {
                     <td>20%</td>
                     <td>
                       <div className="quotation__editdelete_icon">
-                        <img src={editicon} alt="editicon" />
+                        <img
+                          src={editicon}
+                          alt="editicon"
+                          data-toggle="modal"
+                          data-target="#bespokeadd"
+                        />
                         <img
                           src={Delete_icon}
                           data-toggle="modal"
                           data-target="#Delete_modal"
                           alt="deleteicon"
                         />
-
-                        {/* <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button> */}
 
                         <div
                           className="modal fade"

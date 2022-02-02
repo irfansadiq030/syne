@@ -1,14 +1,14 @@
 import React from "react";
-import "./Jobes.css";
+import "./Invoice.css";
 import { Col, Row, Container, Table } from "react-bootstrap";
 import checkicon from "../../images/check-square.svg";
 // import { Link } from "react-router-dom";
-const Jobes = () => {
+const Invoice = () => {
   return (
     <Container fluid className="quotation-top">
       <ul className="quotation-menu">
         <li className="quotation-menu-item">
-          <h5 className="h5-quotation">Job</h5>
+          <h5 className="h5-quotation">Invoice</h5>
         </li>
         <li className="quotation-menu-item">
           <div className="input-group">
@@ -21,7 +21,7 @@ const Jobes = () => {
             />
             <div className="input-group-append" id="button-addon4">
               <button
-                className="btn text-white  job__search__btn"
+                className="btn text-white  invoice__search__btn"
                 type="button"
               >
                 <i className="fas fa-search"></i>
@@ -133,9 +133,9 @@ const Jobes = () => {
         <Row className="h-100">
           <Col xs={12} md={2} className="left-col-quote-left-side">
             <div className="quote-left-side  border rouded">
-              <button className="btn btn-sm btn-primary w-100">
+              <button className="btn btn-sm btn-success w-100">
                 {" "}
-                + Add New Job
+                + Add New Invoice
               </button>
 
               <button className=" btn btn-sm btn-primary  quotation-left-button">
@@ -158,36 +158,26 @@ const Jobes = () => {
                 <span> LP Print</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
-                <span>Completed</span>
-                <img src={checkicon} alt="" className="quotation-check-icon" />
-              </button>
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
-                <span> Collected CF</span>
-                <img src={checkicon} alt="" className="quotation-check-icon" />
-              </button>
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
-                <span>Delivered FP</span>
-                <img src={checkicon} alt="" className="quotation-check-icon" />
-              </button>
             </div>
           </Col>
           <Col md={10}>
             <div className="table-scroll">
               <Table striped bordered hover className="quotation-table">
-                <thead className="jobs-table-head">
+                <thead className="invoice-table-head">
                   <tr>
                     <th>Status</th>
-                    <th>Job No.</th>
-                    <th>Date</th>
+                    <th>Inv No.</th>
+                    <th>Invoice Date</th>
                     <th>Company</th>
                     <th>Description</th>
-                    <th>Contact</th>
+
                     <th>Linked job</th>
                     <th>Next</th>
                     <th>Tax</th>
                     <th>Total</th>
-                    <th>Actions</th>
+                    <th>All</th>
+                    <th>Payment Status</th>
+                    <th>Comment Box</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -196,53 +186,24 @@ const Jobes = () => {
                       <div className="btn-group">
                         <button
                           type="button"
-                          className="btn btn-sm btn-secondary dropdown-toggle"
-                          data-toggle="dropdown"
+                          className="btn btn-sm btn-secondary "
                           aria-expanded="false"
                         >
-                          Draft
+                          Unpaid
                         </button>
-                        <div className="dropdown-menu">
-                          <a className="dropdown-item" href="/">
-                            DPD Sent
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            FP Process
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            PW Process
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            LP Print
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Completed
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Collected CF
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Delivered FP
-                          </a>
-                        </div>
                       </div>
                     </td>
                     <td>Q3766</td>
                     <td>12/12/19</td>
                     <td>@GHM</td>
                     <td>Arts Forum Exhibition</td>
-                    <td>Been Hartley</td>
-                    <td>Job00345</td>
+                    <td>Inv00872</td>
                     <td>&euro;222.45</td>
                     <td>&euro;222.45</td>
                     <td>&euro;222.45</td>
-
                     <td>
                       <input type="radio" class="bg-secondary" />
-                      &nbsp;X
                     </td>
-                  </tr>
-                  <tr>
                     <td>
                       <div className="btn-group">
                         <button
@@ -251,26 +212,26 @@ const Jobes = () => {
                           data-toggle="dropdown"
                           aria-expanded="false"
                         >
-                          Draft
+                          Unpaid
                         </button>
                         <div className="dropdown-menu">
                           <a className="dropdown-item" href="/">
-                            DPD Sent
+                            Paid Bank
                           </a>
                           <a className="dropdown-item" href="/">
-                            FP Process
+                            Paid Card
                           </a>
                           <a className="dropdown-item" href="/">
-                            PW Process
+                            Paid Paid
                           </a>
                           <a className="dropdown-item" href="/">
-                            LP Print
+                            Credit Note
                           </a>
                           <a className="dropdown-item" href="/">
-                            Completed
+                            Contra
                           </a>
                           <a className="dropdown-item" href="/">
-                            Collected CF
+                            Pro-Forma
                           </a>
                           <a className="dropdown-item" href="/">
                             Delivered FP
@@ -278,72 +239,10 @@ const Jobes = () => {
                         </div>
                       </div>
                     </td>
-                    <td>Q3766</td>
-                    <td>12/12/19</td>
-                    <td>@GHM</td>
-                    <td>Arts Forum Exhibition</td>
-                    <td>Been Hartley</td>
-                    <td>Job00345</td>
-                    <td>&euro;222.45</td>
-                    <td>&euro;222.45</td>
-                    <td>&euro;222.45</td>
 
-                    <td>
-                      <input type="radio" class="bg-secondary" />
-                      &nbsp;X
-                    </td>
+                    <td>Comment</td>
                   </tr>
-                  <tr>
-                    <td>
-                      <div className="btn-group">
-                        <button
-                          type="button"
-                          className="btn btn-sm btn-secondary dropdown-toggle"
-                          data-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Draft
-                        </button>
-                        <div className="dropdown-menu">
-                          <a className="dropdown-item" href="/">
-                            DPD Sent
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            FP Process
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            PW Process
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            LP Print
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Completed
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Collected CF
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Delivered FP
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>Q3766</td>
-                    <td>12/12/19</td>
-                    <td>@GHM</td>
-                    <td>Arts Forum Exhibition</td>
-                    <td>Been Hartley</td>
-                    <td>Job00345</td>
-                    <td>&euro;222.45</td>
-                    <td>&euro;222.45</td>
-                    <td>&euro;222.45</td>
 
-                    <td>
-                      <input type="radio" class="bg-secondary" />
-                      &nbsp;X
-                    </td>
-                  </tr>
                   <tr class="bg-light border-bottom border-secondary">
                     <td colspan="11" class="pb-0" style={{ gap: "1rem" }}>
                       <div class="w-100 d-flex" style={{ gap: "1rem" }}>
@@ -449,4 +348,4 @@ const Jobes = () => {
   );
 };
 
-export default Jobes;
+export default Invoice;

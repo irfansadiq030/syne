@@ -1,9 +1,14 @@
 import React from "react";
 
 import { Routes, Route } from "react-router-dom";
+import AddProductInvoicePage from "../../pages/AddProductInvoicePage";
 import AddProductJobsPage from "../../pages/AddProductJobsPage";
 import AddProductQuotesPage from "../../pages/AddProductQuotesPage";
+import CompaniesPage from "../../pages/CompaniesPage";
+import ContactsPage from "../../pages/ContactsPage";
 import ForgetPasswordPage from "../../pages/ForgetPasswordPage";
+import InvoiceIdPage from "../../pages/InvoiceIdPage";
+import InvoicePage from "../../pages/InvoicePage";
 import JobIdPage from "../../pages/JobIdPage";
 
 import JobsPage from "../../pages/JobsPage";
@@ -30,6 +35,11 @@ const AllRoutes = () => {
         <Route path="/jobs" element={<JobsPage />} />
         <Route path="/jobs/:id" element={<JobIdPage />} />
         <Route path="/jobs/addproduct" element={<AddProductJobsPage />} />
+        <Route path="/invoice" element={<InvoicePage />} />
+        <Route path="/invoice/:id" element={<InvoiceIdPage />} />
+        <Route path="/invoice/addproduct" element={<AddProductInvoicePage />} />
+        <Route path="/companies" element={<CompaniesPage />} />
+        <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
     </>
   );
