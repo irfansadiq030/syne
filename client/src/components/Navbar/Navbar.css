@@ -26,8 +26,9 @@
   display: none;
   position: absolute;
   background: #1d6598;
-  min-width: 130px;
+  min-width: 200px;
   z-index: 1;
+
 }
 .dropdown-content a {
   color: rgb(255, 255, 255);
@@ -36,7 +37,7 @@
   display: block;
 }
 .dropdown-content a:hover {
-  background: rgb(236, 16, 16);
+  background: skyblue;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -44,6 +45,8 @@
 .nav-item {
   list-style-type: none;
   padding: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -116,4 +119,12 @@
   .setting-item {
     margin-left: 0px;
   }
+}
+
+.profileimage{
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50px !important;
+  margin: 0 auto;
+  text-align: center;
 }

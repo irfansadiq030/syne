@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 
 import navbarbrand from "../../images/navbarbrand.svg";
+import profileiamge from "../../images/profile.jpg"
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -39,9 +40,11 @@ const Navbar = () => {
           <div className="dropdown">
             Configuration <i className="fas fa-caret-down" />
             <div className="dropdown-content">
-              <a href="/">Database1</a>
-              <a href="/">Database1</a>
-              <a href="/">Database1</a>
+              <a href="/quotationsettings">Quotation Settings</a>
+              <a href="/">Jobs Settings</a>
+              <a href="/">Invoice Settings</a>
+              <a href="/">Products</a>
+              <a href="/">Database</a>
             </div>
           </div>
         </li>
@@ -51,9 +54,15 @@ const Navbar = () => {
             <i className="fas fa-caret-down fa-lg" />{" "}
             <i className="fas fa-cog fa-lg" />
             <div className="dropdown-content">
-              <a href="/">Setting</a>
-              <a href="/">Profile</a>
-              <a href="/">Logout</a>
+              <div className="p-3 center">
+                <img src={profileiamge} alt="logo" className="profileimage"></img>
+                <h3>Username</h3>
+                <p>youremail@gmail.com</p>
+              </div>
+              <a href="/">Manage My Accounts</a>
+              <a href="/">Manage User Accounts</a>
+              <a href="/">Business Settings</a>
+              <a href="/"> <i class="fas fa-door-open    "></i> Logout</a>
             </div>
           </div>
         </li>

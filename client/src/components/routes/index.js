@@ -16,6 +16,7 @@ import LoginPage from "../../pages/LoginPage";
 import QuotationPage from "../../pages/QuotationPage";
 import QuotationPageId from "../../pages/QuotationPageId";
 import Navbar from "../Navbar/Navbar";
+import QuotationSettings from "../../pages/QuotationSettings"
 
 const AllRoutes = () => {
   return (
@@ -28,10 +29,7 @@ const AllRoutes = () => {
       <Routes>
         <Route path="/quotation" element={<QuotationPage />} />
         <Route path="/quotation/:id" element={<QuotationPageId />} />
-        <Route
-          path="/quotation/addproduct"
-          element={<AddProductQuotesPage />}
-        />
+        <Route path="/quotation/addproduct" element={<AddProductQuotesPage />}/>
         <Route path="/jobs" element={<JobsPage />} />
         <Route path="/jobs/:id" element={<JobIdPage />} />
         <Route path="/jobs/addproduct" element={<AddProductJobsPage />} />
@@ -40,6 +38,10 @@ const AllRoutes = () => {
         <Route path="/invoice/addproduct" element={<AddProductInvoicePage />} />
         <Route path="/companies" element={<CompaniesPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
+        <Route path="/quotationsettings" element={<QuotationSettings />} />
+        <Route path="/jobssettings" element={<QuotationSettings />} />
+        <Route path="/invoicesettings" element={<QuotationSettings />} />
+        <Route path="/quotationsettings" element={<QuotationSettings />} />
       </Routes>
     </>
   );
