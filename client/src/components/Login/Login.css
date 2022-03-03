@@ -142,3 +142,18 @@
     margin-bottom: 60px !important;
   } */
 }
+
+.errorform{
+  color: red;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.errspan {
+  float: right;
+  margin-right: 6px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  color: red;
+}

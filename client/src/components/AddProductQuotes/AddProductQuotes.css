@@ -19,6 +19,10 @@
 
   font-weight: bold;
 }
+.f-30{
+  font-size: 30px !important;
+  font-weight: 700;
+}
 .Item__List__Heading {
   font-family: Roboto;
   font-style: normal;

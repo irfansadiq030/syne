@@ -175,3 +175,8 @@
     overflow-y: scroll;
   }
 }
+
+
+.text-green{
+  color: #00a35d !important;
+}

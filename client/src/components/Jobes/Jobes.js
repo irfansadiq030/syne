@@ -6,26 +6,25 @@ import checkicon from "../../images/check-square.svg";
 const Jobes = () => {
   return (
     <Container fluid className="quotation-top">
+          <Row className="h-auto">
+      <Col xs={12} md={2} className="left-col-quote-left-side">
+          <h5 className="h5-quotation">Jobs</h5>
+      </Col>
+      <Col md={10}>
       <ul className="quotation-menu">
-        <li className="quotation-menu-item">
-          <h5 className="h5-quotation">Job</h5>
-        </li>
         <li className="quotation-menu-item">
           <div className="input-group">
             <input
               type="text"
-              className="form-control"
-              placeholder="Recipient's username"
+              className="form-control mw-400"
+              placeholder="Search by Company, Quotation Number Description, Section Name "
               aria-label="Recipient's username with two button addons"
               aria-describedby="button-addon4"
             />
             <div className="input-group-append" id="button-addon4">
-              <button
-                className="btn text-white  job__search__btn"
-                type="button"
-              >
+              <button className="btn btn-primary bg-yellow " type="button">
                 <i className="fas fa-search"></i>
-                Search
+                &nbsp;&nbsp;Search
               </button>
               <button className="btn btn-outline-secondary " type="button">
                 Advanced
@@ -37,11 +36,11 @@ const Jobes = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm  btn-light dropdown-toggle"
+              className="btn btn-sm  btn-light dropdown-toggle dropnow"
               data-toggle="dropdown"
               aria-expanded="false"
             >
-              All Records
+              All Records &nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -61,20 +60,20 @@ const Jobes = () => {
           </div>
         </li>
         <li className="quotation-menu-item">
-          <div className="quotation-datepicker">
-            <input type="date" />
+          <div className="quotation-datepicker ">
+            <input type="date" className="form-control"/>
           </div>
         </li>
         <li className="quotation-menu-item">
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle"
+              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-blue p-2"
               data-toggle="dropdown"
               aria-expanded="false"
             >
               <i className="fas fa-external-link-alt"></i>
-              Export
+              &nbsp;&nbsp;Export&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -97,12 +96,12 @@ const Jobes = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-danger dropdown-toggle"
+              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2"
               data-toggle="dropdown"
               aria-expanded="false"
             >
               <i className="fas fa-file-pdf"></i>
-              Quick PDF
+              &nbsp;&nbsp;Quick PDF&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -122,51 +121,52 @@ const Jobes = () => {
           </div>
         </li>
         <li className="quotation-menu-item">
-          <button type="button" class="btn btn-sm btn-danger">
+          <button type="button" class="btn btn-sm btn-danger bg-red p-2">
             {" "}
-            <i className="fas fa-file-pdf"></i> View
+            <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;View&nbsp;&nbsp;
           </button>
         </li>
       </ul>
-
+      </Col>
+      </Row>
       <div className="h-100">
         <Row className="h-100">
           <Col xs={12} md={2} className="left-col-quote-left-side">
             <div className="quote-left-side  border rouded">
-              <button className="btn btn-sm btn-primary w-100">
+              <button className="btn btn-sm btn-primary w-100 p-3  font-quote-button bg-yellow">
                 {" "}
                 + Add New Job
               </button>
 
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
+              <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
                 <span> Draft</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
+              <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
                 <span> DPD Sent</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
+              <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
                 <span> FP Process</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
+              <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
                 <span> PW Process</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
+              <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
                 <span> LP Print</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
+              <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
                 <span>Completed</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
+              <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
                 <span> Collected CF</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
-              <button className=" btn btn-sm btn-primary  quotation-left-button">
+              <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
                 <span>Delivered FP</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
@@ -192,39 +192,15 @@ const Jobes = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>
-                      <div className="btn-group">
-                        <button
-                          type="button"
-                          className="btn btn-sm btn-secondary dropdown-toggle"
-                          data-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Draft
-                        </button>
-                        <div className="dropdown-menu">
-                          <a className="dropdown-item" href="/">
-                            DPD Sent
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            FP Process
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            PW Process
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            LP Print
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Completed
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Collected CF
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Delivered FP
-                          </a>
-                        </div>
+                  <td>
+                      <div className="form-group">
+                        <select className="form-control form-select bg-dark-blue text-light custom-selects">
+                        <option selected>Draft</option>
+                          <option>DPD Sent</option>
+                          <option>FP Process</option>
+                          <option>PW Process</option>
+                          <option>LP Print</option>
+                        </select>
                       </div>
                     </td>
                     <td>Q3766</td>
@@ -244,38 +220,14 @@ const Jobes = () => {
                   </tr>
                   <tr>
                     <td>
-                      <div className="btn-group">
-                        <button
-                          type="button"
-                          className="btn btn-sm btn-secondary dropdown-toggle"
-                          data-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Draft
-                        </button>
-                        <div className="dropdown-menu">
-                          <a className="dropdown-item" href="/">
-                            DPD Sent
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            FP Process
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            PW Process
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            LP Print
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Completed
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Collected CF
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Delivered FP
-                          </a>
-                        </div>
+                      <div className="form-group">
+                        <select className="form-control form-select bg-green text-light custom-selects">
+                        <option selected>FP Process</option>
+                          <option>DPD Sent</option>
+                          <option>FP Process</option>
+                          <option>PW Process</option>
+                          <option>LP Print</option>
+                        </select>
                       </div>
                     </td>
                     <td>Q3766</td>
@@ -295,38 +247,14 @@ const Jobes = () => {
                   </tr>
                   <tr>
                     <td>
-                      <div className="btn-group">
-                        <button
-                          type="button"
-                          className="btn btn-sm btn-secondary dropdown-toggle"
-                          data-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Draft
-                        </button>
-                        <div className="dropdown-menu">
-                          <a className="dropdown-item" href="/">
-                            DPD Sent
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            FP Process
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            PW Process
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            LP Print
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Completed
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Collected CF
-                          </a>
-                          <a className="dropdown-item" href="/">
-                            Delivered FP
-                          </a>
-                        </div>
+                      <div className="form-group">
+                        <select className="form-control form-select bg-purple text-light custom-selects">
+                        <option selected>Draft</option>
+                          <option>DPD Sent</option>
+                          <option>FP Process</option>
+                          <option>PW Process</option>
+                          <option>LP Print</option>
+                        </select>
                       </div>
                     </td>
                     <td>Q3766</td>

@@ -6,24 +6,24 @@ import image_vector from "../../images/image_vector.svg";
 const AddProductJobs = () => {
   return (
     <>
-      <Container fluid className="quotation-top">
+       <Container className="quotation-top">
         <Container fluid>
           <Row>
-            <Col lg={10}>
-              <h6 className="Adding__Jobs__Leftside">
-                Adding Product to Jobs:{" "}
+            <Col lg={11}>
+              <h2 className="Adding__Product__Leftside f-30 text-yellow">
+                <b>Adding Product to Jobs:</b>{" "}
                 <span className="Adding__Product__number">3744</span>
-              </h6>
+              </h2>
             </Col>
-            <Col lg={2}>
+            <Col lg={1}>
               <div className="btn-group">
                 <button
                   type="button"
-                  class="btn btn-sm font-weight-bold text-white  Adding__Jobs__back__btn"
+                  class="btn btn-md font-weight-bold text-white btn-primary bg-yellow"
                   data-toggle="dropdown"
                   aria-expanded="false"
-                >
-                  Back
+                > <i className="fa fa-arrow-left"></i>&nbsp;&nbsp;
+                   Back
                 </button>
               </div>
             </Col>
@@ -34,57 +34,30 @@ const AddProductJobs = () => {
           <h4 className="Item__List__Heading">Item List</h4>
           <Row>
             <Col lg={4}>
-              <div className="Item__List__dropdown">
-                <div className="btn-group">
-                  <button
-                    type="button"
-                    className="btn  dropdown-toggle Item__List__dropdown__category"
-                    data-toggle="dropdown"
-                    data-display="static"
-                    aria-expanded="false"
-                  >
-                    Add Category
-                  </button>
-                  <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-                    <button className="dropdown-item" type="button">
-                      Action
-                    </button>
-                    <button className="dropdown-item" type="button">
-                      Another action
-                    </button>
-                    <button className="dropdown-item" type="button">
-                      Something else here
-                    </button>
-                  </div>
-                </div>
-                <div className="btn-group">
-                  <button
-                    type="button"
-                    className="btn  dropdown-toggle Item__List__dropdown__category"
-                    data-toggle="dropdown"
-                    data-display="static"
-                    aria-expanded="false"
-                  >
-                    All Tages
-                  </button>
-                  <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-                    <button className="dropdown-item" type="button">
-                      Action
-                    </button>
-                    <button className="dropdown-item" type="button">
-                      Another action
-                    </button>
-                    <button className="dropdown-item" type="button">
-                      Something else here
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </Col>
+            <div class="form-group">
+              {/* <label for="sel1">All Category:</label> */}
+              <select class="form-control form-select" id="sel1">
+                <option>All Categories</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              {/* <label for="sel1">All Tags:</label> */}
+              <select class="form-control form-select" id="sel1">
+                <option >All Tags</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            </Col> 
             <Col lg={8}>
               <div className="minmax__Price__Head">
-                <div className="minmax__Price">
-                  <div className="input-group  w-25">
+                <div className="minmax__Price ml-auto">
+                  <div className="input-group  w-100">
                     <select
                       className="custom-select minmax__Price__select "
                       id="inputGroupSelect01"
@@ -95,7 +68,7 @@ const AddProductJobs = () => {
                       <option value="3">Three</option>
                     </select>
                   </div>
-                  <div className="input-group  w-25">
+                  <div className="input-group  w-100">
                     <select
                       className="custom-select minmax__Price__select"
                       id="inputGroupSelect01"
@@ -109,7 +82,7 @@ const AddProductJobs = () => {
                   <div className="btn-group">
                     <button
                       type="button"
-                      class="btn btn-sm font-weight-bold text-white Adding__Jobs__reset__btn"
+                      class="btn btn-md font-weight-bold text-white btn-primary bg-blue"
                       data-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -117,7 +90,7 @@ const AddProductJobs = () => {
                     </button>
                   </div>
                 </div>
-                <div className="input-group  w-50 minmax__Price__search">
+                <div className="input-group  w-75 minmax__Price__search ml-auto">
                   <input
                     type="text"
                     className="form-control minmax__Price__search__input"
@@ -128,15 +101,12 @@ const AddProductJobs = () => {
                     className="input-group-append minmax__Price__search__btn"
                     id="button-addon4 "
                   >
-                    <button
-                      className="btn text-white font-weight-bold Adding__Jobs__search__btn"
-                      type="button "
-                    >
-                      <i className="fas fa-search"></i>
-                      Search
+                    <button className="btn btn-primary bg-blue" type="button ">
+                      <i className="fas fa-search"></i> &nbsp;
+                      Search&nbsp;
                     </button>
                     <button
-                      className="btn font-weight-bold  text-white ml-1 Adding__Jobs__clear__btn  minmax__Price__search__btn"
+                      className="btn btn-primary ml-1  minmax__Price__search__btn bg-blue"
                       type="button"
                     >
                       Clear
@@ -153,7 +123,7 @@ const AddProductJobs = () => {
               <div className="btn-group mt-3 ">
                 <button
                   type="button"
-                  class="btn btn-sm   font-weight-bold text-white btn-success Add__Selected__pro__btn__color"
+                  class="btn btn-md   font-weight-bold text-white btn-success Add__Selected__pro__btn__color"
                   data-toggle="dropdown"
                   aria-expanded="false"
                 >
@@ -168,7 +138,7 @@ const AddProductJobs = () => {
             <Col md={12}>
               <div className="table-scroll">
                 <Table striped bordered hover className="quotation-table">
-                  <thead className="Add__job__table__head">
+                  <thead className="Add__Pro__table__head bg-yellow text-center">
                     <tr>
                       <th>Image</th>
                       <th>Item Code </th>
@@ -182,7 +152,7 @@ const AddProductJobs = () => {
                       <th>Select</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="text-center">
                     <tr>
                       <td>
                         <img

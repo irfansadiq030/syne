@@ -12,11 +12,12 @@
 .h5-quotation {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 35px;
-
+  font-weight: bolder;
   color: #8f8f8f;
+  text-align: center;
+
 }
 .quotation-menu {
   display: flex;
@@ -175,3 +176,32 @@
     overflow-y: scroll;
   }
 }
+
+.text-blue{
+  color: #0080B8 !important;
+}
+
+.bg-yellow{
+  background:#F57E24 !important;
+}
+
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+} */
+
+/* .font-quote-button{
+  font-size: 15px !important;
+  font-weight: 700;
+}
+
+
+.dropnow{
+background: #FFFFFF !important;
+border: 1px solid #CFCFCF !important;
+box-sizing: border-box !important;
+border-radius: 7px !important;
+font-size:15px !important;
+width: 182px;
+height: 36px;
+} */

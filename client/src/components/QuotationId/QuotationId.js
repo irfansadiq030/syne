@@ -11,11 +11,11 @@ import { Link } from "react-router-dom";
 import image_vector from "../../images/image_vector.svg";
 const QuotationId = () => {
   return (
-    <Container fluid className="quotation-top">
-      <Row className="quotation-top-row">
+    <Container className="quotation-top">
+      <Row className="quotation-top-row p-4">
         <Col lg={2}>
           <h4>
-            QUOTE: <span>3744</span>{" "}
+            <b className="text-blue w-700">QUOTE:</b> <span>3744</span>{" "}
           </h4>
         </Col>
         <Col lg={10}>
@@ -23,12 +23,12 @@ const QuotationId = () => {
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-sm font-weight-bold btn-danger dropdown-toggle"
+                class="btn btn-md font-weight-bold btn-danger dropdown-toggle p-2"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
                 <img src={quickpdf} alt="" class="icon" />
-                Quick PDF
+                &nbsp;Quick PDF &nbsp;
               </button>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="/">
@@ -45,7 +45,7 @@ const QuotationId = () => {
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-sm font-weight-bold btn-danger d-flex gap-0.5 duplicate-quote-btn"
+                class="btn btn-md font-weight-bold btn-primary d-flex gap-0.5 duplicate-quote-btn p-2"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -63,48 +63,48 @@ const QuotationId = () => {
                     style={{ left: "10%" }}
                   />
                 </div> */}
-                Duplicate Quote
+                &nbsp;Duplicate Quote&nbsp;
               </button>
             </div>
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-sm font-weight-bold text-white btn-warning"
+                class="btn btn-md font-weight-bold text-white btn-warning p-2"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
-                + Create Job
+                &nbsp;+ Create Job&nbsp;
               </button>
             </div>
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-sm font-weight-bold text-white btn-success"
+                class="btn btn-md font-weight-bold text-white btn-success p-2"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
-                + Create Invoice
+                &nbsp;+ Create Invoice&nbsp;
               </button>
             </div>
             <div className="btn-group">
               <div className="form-group mb-0 w-100">
                 <select
                   value="Draft"
-                  className="form-control form-control-sm text-dark  font-weight-bold status"
+                  className="form-control form-control-md bg-blue  font-weight-bold status text-white"
                 >
-                  <option value="Draft" selected class="bg-primary">
-                    Draft
+                  <option value="Draft" selected className="bg-primary">
+                  Draft
                   </option>
-                  <option value="Sent" class="bg-primary">
+                  <option value="Sent" className="bg-primary">
                     Sent
                   </option>
-                  <option value="Accepted" class="bg-success">
+                  <option value="Accepted" className="bg-success">
                     Accepted
                   </option>
-                  <option value="Declined" class="bg-violet">
+                  <option value="Declined" className="bg-violet">
                     Declined
                   </option>
-                  <option value="Aged" class="bg-brown">
+                  <option value="Aged" className="bg-brown">
                     Aged
                   </option>
                 </select>
@@ -124,8 +124,8 @@ const QuotationId = () => {
                   </label>
                   <div class="w-100 d-flex align-items-center gap-1">
                     <input
-                      type="text"
-                      class="form-control bg-light w-25"
+                      type="date"
+                      class="form-control bg-light w-50"
                       style={{ minwidth: "100px" }}
                       id="date-input"
                       placeholder="12 / 11/ 22"
@@ -241,7 +241,7 @@ const QuotationId = () => {
               <Link to="/quotation/addproduct">
                 <button
                   type="button"
-                  class="btn btn-sm font-weight-bold text-white btn-success"
+                  class="btn btn-lg font-weight-bold text-white btn-success bg-green"
                   data-toggle="dropdown"
                   aria-expanded="false"
                 >
@@ -254,7 +254,7 @@ const QuotationId = () => {
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-sm font-weight-bold text-white btn-warning"
+                class="btn btn-lg font-weight-bold text-white btn-warning bg-yellow"
                 data-toggle="modal"
                 data-target="#exampleModalCenter"
               >
@@ -277,7 +277,7 @@ const QuotationId = () => {
                 <div className="modal-content Bespole__modal">
                   <div className="modal-header  ">
                     <h5
-                      className="modal-title Bespole__modal__heading"
+                      className="modal-title Bespole__modal__heading p-2"
                       id="bespokeadd"
                     >
                       Add New Bespoke
@@ -514,11 +514,11 @@ const QuotationId = () => {
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-sm font-weight-bold text-white btn-success"
+                class="btn btn-lg font-weight-bold text-white btn-success p-2 bg-blue"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
-                Save Changes
+                SAVE CHANGES
               </button>
             </div>
           </Col>
@@ -526,11 +526,11 @@ const QuotationId = () => {
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-sm font-weight-bold text-black btn-light"
+                class="btn btn-lg font-weight-bold text-black btn-light p-2"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
-                Close
+                CLOSE
               </button>
             </div>
           </Col>

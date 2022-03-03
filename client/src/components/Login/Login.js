@@ -2,7 +2,8 @@ import React from "react";
 import "./Login.css";
 import synelogo from "../../images/syne-logo.svg";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form, Button, FormCheck } from "react-bootstrap";
+
 const Login = () => {
   return (
     <>
@@ -31,8 +32,13 @@ const Login = () => {
                   <Form.Control
                     className="login-form-input"
                     type="email"
-                    placeholder="Email/Username"
+                    placeholder="Email/Username"  
                   />
+                  <span class="fa fa-info-circle errspan"></span>
+                  
+                <FormCheck className="errorform">
+                  Email is not existing
+                </FormCheck>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -42,6 +48,10 @@ const Login = () => {
                     type="password"
                     placeholder="Password"
                   />
+                  <span class="fa fa-info-circle errspan"></span>
+                  <FormCheck className="errorform">
+                  Password not match
+                </FormCheck>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                   <Link className="forget-link" to="/forgetpassword">
