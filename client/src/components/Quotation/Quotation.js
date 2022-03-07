@@ -77,12 +77,12 @@ const Quotation = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-blue p-2"
+              className="btn btn-sm btn-secondary dropdown-toggle bg-export p-2"
               data-toggle="dropdown"
               aria-expanded="false"
             >
               <i className="fas fa-external-link-alt"></i>
-              &nbsp;&nbsp;Export&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;<b>Export</b>&nbsp;&nbsp;&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -105,12 +105,12 @@ const Quotation = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2"
+              className="btn btn-sm btn-danger dropdown-toggle bg-pdf p-2"
               data-toggle="dropdown"
               aria-expanded="false"
             >
               <i className="fas fa-file-pdf"></i>
-              &nbsp;&nbsp;Quick PDF&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;<b>Quick PDF</b>&nbsp;&nbsp;&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -132,7 +132,7 @@ const Quotation = () => {
         <li className="quotation-menu-item">
           <button type="button" class="btn btn-sm btn-danger bg-red p-2">
             {" "}
-            <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;View&nbsp;&nbsp;
+            <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;
           </button>
         </li>
       </ul>
@@ -145,27 +145,28 @@ const Quotation = () => {
             <div className="quote-left-side  border rouded">
               <button className="btn btn-sm btn-primary w-100 p-3 font-quote-button">
                 {" "}
-                + Add New Quote
+                <b>+ Add New Quote</b>
+                <br />
               </button>
 
               <button className=" btn btn-sm btn-primary p-2  quotation-left-button">
-                <span> Draft</span>
+                <span>Draft</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
               <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
-                <span> Sent</span>
+                <span>Sent</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
               <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
-                <span> Accepted</span>
+                <span>Accepted</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
               <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
-                <span> Declined</span>
+                <span>Declined</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
               <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
-                <span> Aged</span>
+                <span>Aged</span>
                 <img src={checkicon} alt="" className="quotation-check-icon" />
               </button>
             </div>
@@ -192,7 +193,7 @@ const Quotation = () => {
                   <tr>
                   <td>
                       <div className="form-group">
-                        <select className="form-control form-select bg-blue text-light custom-selects">
+                        <select className="form-control-sm form-select-sm tab-dark-blue text-light">
                         <option selected> Draft</option>
                           <option>Sent</option>
                           <option>Accepted</option>
@@ -219,7 +220,7 @@ const Quotation = () => {
                   <tr>
                   <td>
                       <div className="form-group">
-                        <select className="form-control form-select bg-success text-light custom-selects">
+                        <select className="form-control-sm form-select-sm tab-green text-light">
                         <option selected> Accepted</option>
                           <option>Sent</option>
                           <option>Draft</option>
@@ -246,7 +247,7 @@ const Quotation = () => {
                   <tr>
                   <td>
                       <div className="form-group">
-                        <select className="form-control form-select bg-purple text-light custom-selects">
+                        <select className="form-control-sm form-select-sm tab-purple text-light">
                         <option selected> Decline</option>
                           <option>Sent</option>
                           <option>Draft</option>

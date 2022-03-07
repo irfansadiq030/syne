@@ -10,10 +10,10 @@ const Login = () => {
       <div className="Login-container">
         <Container>
           <Row className="Login-wrapper">
-            <Col className="left-side" sm={8} md={4} lg={8}>
+            <Col className="left-side" sm={8} md={8} lg={8}>
               <div className="image-map-Wrapper"></div>
             </Col>
-            <Col className="right-side" sm={4} md={8} lg={4}>
+            <Col className="right-side" sm={4} md={4} lg={4}>
               <div className="Logo-Wrapper">
                 <img
                   alt="notfound"
@@ -34,7 +34,7 @@ const Login = () => {
                     type="email"
                     placeholder="Email/Username"  
                   />
-                  <span class="fa fa-info-circle errspan"></span>
+                  <span class="errspan"></span>
                   
                 <FormCheck className="errorform">
                   Email is not existing
@@ -48,7 +48,7 @@ const Login = () => {
                     type="password"
                     placeholder="Password"
                   />
-                  <span class="fa fa-info-circle errspan"></span>
+                  <span class="errspan"></span>
                   <FormCheck className="errorform">
                   Password not match
                 </FormCheck>

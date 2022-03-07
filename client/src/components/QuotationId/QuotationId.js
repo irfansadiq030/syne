@@ -14,8 +14,8 @@ const QuotationId = () => {
     <Container className="quotation-top">
       <Row className="quotation-top-row p-4">
         <Col lg={2}>
-          <h4>
-            <b className="text-blue w-700">QUOTE:</b> <span>3744</span>{" "}
+          <h4 className="text-blue w-800">
+            <b>QUOTE:</b> <span>3744</span>{" "}
           </h4>
         </Col>
         <Col lg={10}>
@@ -23,7 +23,7 @@ const QuotationId = () => {
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-md font-weight-bold btn-danger dropdown-toggle p-2"
+                class="btn btn-md font-weight-bold bg-red dropdown-toggle p-2"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -45,31 +45,17 @@ const QuotationId = () => {
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-md font-weight-bold btn-primary d-flex gap-0.5 duplicate-quote-btn p-2"
+                class="btn btn-md font-weight-bold btn-primary d-flex gap-0.5 duplicate-quote-btn p-2 bg-light-blue"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
-                {/* <div class="position-relative icon">
-                  <img
-                    src={quickpdf}
-                    alt=""
-                    class="position-absolute"
-                    style={{ left: "0px" }}
-                  />
-                  <img
-                    src="assets/duplicate-part2.svg"
-                    alt=""
-                    class="position-absolute"
-                    style={{ left: "10%" }}
-                  />
-                </div> */}
                 &nbsp;Duplicate Quote&nbsp;
               </button>
             </div>
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-md font-weight-bold text-white btn-warning p-2"
+                class="btn btn-md font-weight-bold text-white btn-warning p-2 bg-dark-yellow"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -79,7 +65,7 @@ const QuotationId = () => {
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-md font-weight-bold text-white btn-success p-2"
+                class="btn btn-md font-weight-bold text-white btn-success p-2 bg-dark-green"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -90,7 +76,7 @@ const QuotationId = () => {
               <div className="form-group mb-0 w-100">
                 <select
                   value="Draft"
-                  className="form-control form-control-md bg-blue  font-weight-bold status text-white"
+                  className="form-control form-control-md bg-blue  font-weight-bold status text-white bg-dark-gray"
                 >
                   <option value="Draft" selected className="bg-primary">
                   Draft
@@ -125,12 +111,12 @@ const QuotationId = () => {
                   <div class="w-100 d-flex align-items-center gap-1">
                     <input
                       type="date"
-                      class="form-control bg-light w-50"
+                      class="form-control form-date-sm w-100 bg-light w-50"
                       style={{ minwidth: "100px" }}
                       id="date-input"
                       placeholder="12 / 11/ 22"
                     />
-                    <img src={calender} alt="calendar" class="icon" />
+                    {/* <img src={calender} alt="calendar" class="icon" /> */}
                   </div>
                 </div>
                 <div class="form-group">
@@ -140,7 +126,7 @@ const QuotationId = () => {
                   <div class="w-100 d-flex align-items-center gap-1">
                     <select
                       value=""
-                      class="form-control bg-light"
+                      class="form-control-lg form-select-sm w-100 bg-light"
                       id="company-select"
                     >
                       <option value="">Ricoh (Merstham)</option>
@@ -155,7 +141,7 @@ const QuotationId = () => {
                   <div class="w-100 d-flex align-items-center gap-1">
                     <select
                       value=""
-                      class="form-control bg-light"
+                      class="form-control-lg form-select-sm w-100 bg-light"
                       id="company-select"
                     >
                       <option value="">Pawel Szulam</option>
@@ -174,7 +160,7 @@ const QuotationId = () => {
                   <div class="w-100 d-flex align-items-center gap-1">
                     <select
                       value=""
-                      class="form-control bg-light"
+                      class="form-control-lg form-select-sm w-100 bg-light"
                       id="invoice-address-select"
                     >
                       <option value="">Ricoh (Merstham) , Ricoh House ,</option>
@@ -190,7 +176,7 @@ const QuotationId = () => {
                   <div class="w-100 d-flex align-items-center gap-1">
                     <select
                       value=""
-                      class="form-control bg-light"
+                      class="form-control-lg form-select-sm w-100 bg-light"
                       id="site-address-select"
                     >
                       <option value="">
@@ -208,7 +194,7 @@ const QuotationId = () => {
                   <div class="w-100 d-flex align-items-center gap-1">
                     <select
                       value=""
-                      class="form-control bg-light"
+                      class="form-control-lg form-select-sm w-100 bg-light"
                       id="assignd-user-select"
                     >
                       <option value="">Febian Porter</option>
@@ -236,12 +222,12 @@ const QuotationId = () => {
       </Container>
       <Container className="mt-5">
         <Row>
-          <Col xs={3} lg={2}>
+          <Col xs={12} lg={2}>
             <div class="btn-group">
               <Link to="/quotation/addproduct">
                 <button
                   type="button"
-                  class="btn btn-lg font-weight-bold text-white btn-success bg-green"
+                  class="btn btn-lg font-weight-bold text-white btn-success bg-dark-green"
                   data-toggle="dropdown"
                   aria-expanded="false"
                 >
@@ -250,11 +236,11 @@ const QuotationId = () => {
               </Link>
             </div>
           </Col>
-          <Col xs={3} lg={6}>
+          <Col xs={12} lg={6}>
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-lg font-weight-bold text-white btn-warning bg-yellow"
+                class="btn btn-lg font-weight-bold text-white btn-warning bg-dark-yellow"
                 data-toggle="modal"
                 data-target="#exampleModalCenter"
               >
@@ -510,11 +496,11 @@ const QuotationId = () => {
               </div>
             </div>
           </Col>
-          <Col xs={3} lg={2} className="saveChanges-btn">
+          <Col xs={12} lg={2} className="saveChanges-btn">
             <div class="btn-group">
               <button
                 type="button"
-                class="btn btn-lg font-weight-bold text-white btn-success p-2 bg-blue"
+                class="btn btn-lg font-weight-bold text-white btn-success p-2 bg-dark-gray"
                 data-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -522,7 +508,7 @@ const QuotationId = () => {
               </button>
             </div>
           </Col>
-          <Col xs={3} lg={2}>
+          <Col xs={12} lg={2}>
             <div class="btn-group">
               <button
                 type="button"
@@ -542,11 +528,11 @@ const QuotationId = () => {
           <Col md={12}>
             <div className="table-scroll">
               <Table striped bordered hover className="quotation-table">
-                <thead className="quotation-table-head">
-                  {/* <tr>
-                    <th>Items Information</th>
-                    <th>Items Price</th>
-                  </tr> */}
+                <thead className="quotation-table-head text-center">
+                <tr>
+                    <th colSpan={5}>Items Information</th>
+                    <th colSpan={7}>Items Price</th>
+                  </tr>
                   <tr>
                     <th>Status</th>
                     <th>Quote No.</th>

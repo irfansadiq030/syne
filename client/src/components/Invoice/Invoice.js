@@ -22,7 +22,7 @@ const Invoice = () => {
               aria-describedby="button-addon4"
             />
             <div className="input-group-append" id="button-addon4">
-              <button className="btn btn-primary bg-success" type="button">
+              <button className="btn btn-primary bg-dark-green b-0" type="button">
                 <i className="fas fa-search"></i>
                 &nbsp;&nbsp;Search
               </button>
@@ -68,12 +68,12 @@ const Invoice = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-blue p-2"
+              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2"
               data-toggle="dropdown"
               aria-expanded="false"
             >
               <i className="fas fa-external-link-alt"></i>
-              &nbsp;&nbsp;Export&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;<b>Export</b>&nbsp;&nbsp;&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -101,7 +101,7 @@ const Invoice = () => {
               aria-expanded="false"
             >
               <i className="fas fa-file-pdf"></i>
-              &nbsp;&nbsp;Quick PDF&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;<b>Quick PDF</b>&nbsp;&nbsp;&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -123,7 +123,7 @@ const Invoice = () => {
         <li className="quotation-menu-item">
           <button type="button" class="btn btn-sm btn-danger bg-red p-2">
             {" "}
-            <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;View&nbsp;&nbsp;
+            <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;&nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;&nbsp;&nbsp;
           </button>
         </li>
       </ul>
@@ -134,9 +134,9 @@ const Invoice = () => {
         <Row className="h-100">
           <Col xs={12} md={2} className="left-col-quote-left-side">
             <div className="quote-left-side  border rouded">
-              <button className="btn btn-sm btn-success bg-success w-100 p-3 font-quote-button">
+              <button className="btn btn-sm btn-success bg-dark-green w-100 p-3 font-quote-button">
                 {" "}
-                + Add New Invoice
+                <b>+ Add New Invoice</b>
               </button>
 
               <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
@@ -185,7 +185,7 @@ const Invoice = () => {
                   <tr>
                   <td>
                       <div className="form-group">
-                        <select className="form-control form-select bg-green text-light custom-selects">
+                        <select className="form-control-sm form-select-sm bg-green text-light b-0">
                         <option selected>FP Process</option>
                           <option>DPD Sent</option>
                           <option>FP Process</option>
@@ -208,7 +208,7 @@ const Invoice = () => {
                     </td>
                     <td>
                       <div className="form-group">
-                        <select className="form-control form-select bg-blue text-light custom-selects">
+                        <select className="form-control-sm form-select-sm bg-dark-gray text-light">
                         <option selected> Unpaid</option>
                           <option>Paid Card</option>
                           <option>Paid Bank</option>

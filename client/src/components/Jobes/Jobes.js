@@ -68,12 +68,12 @@ const Jobes = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-blue p-2"
+              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2"
               data-toggle="dropdown"
               aria-expanded="false"
             >
               <i className="fas fa-external-link-alt"></i>
-              &nbsp;&nbsp;Export&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;<b>Export</b>&nbsp;&nbsp;&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -101,7 +101,7 @@ const Jobes = () => {
               aria-expanded="false"
             >
               <i className="fas fa-file-pdf"></i>
-              &nbsp;&nbsp;Quick PDF&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;<b>Quick PDF</b>&nbsp;&nbsp;&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -123,7 +123,7 @@ const Jobes = () => {
         <li className="quotation-menu-item">
           <button type="button" class="btn btn-sm btn-danger bg-red p-2">
             {" "}
-            <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;View&nbsp;&nbsp;
+            <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;
           </button>
         </li>
       </ul>
@@ -135,7 +135,7 @@ const Jobes = () => {
             <div className="quote-left-side  border rouded">
               <button className="btn btn-sm btn-primary w-100 p-3  font-quote-button bg-yellow">
                 {" "}
-                + Add New Job
+                <b>+ Add New Job</b>
               </button>
 
               <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
@@ -194,7 +194,7 @@ const Jobes = () => {
                   <tr>
                   <td>
                       <div className="form-group">
-                        <select className="form-control form-select bg-dark-blue text-light custom-selects">
+                        <select className="form-control-sm form-select-sm bg-dark-blue text-light custom-selects bg-dark-gray">
                         <option selected>Draft</option>
                           <option>DPD Sent</option>
                           <option>FP Process</option>
@@ -221,7 +221,7 @@ const Jobes = () => {
                   <tr>
                     <td>
                       <div className="form-group">
-                        <select className="form-control form-select bg-green text-light custom-selects">
+                        <select className="form-control-sm form-select-sm bg-green text-light ">
                         <option selected>FP Process</option>
                           <option>DPD Sent</option>
                           <option>FP Process</option>
@@ -248,7 +248,7 @@ const Jobes = () => {
                   <tr>
                     <td>
                       <div className="form-group">
-                        <select className="form-control form-select bg-purple text-light custom-selects">
+                        <select className="form-control-sm form-select-sm bg-purple text-light ">
                         <option selected>Draft</option>
                           <option>DPD Sent</option>
                           <option>FP Process</option>
