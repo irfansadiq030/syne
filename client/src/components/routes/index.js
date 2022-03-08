@@ -25,7 +25,7 @@ const AllRoutes = () => {
         <Route path="/" exact element={<LoginPage />} />
         <Route path="/forgetpassword" element={<ForgetPasswordPage />} />
       </Routes>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/quotation" element={<QuotationPage />} />
         <Route path="/quotation/:id" element={<QuotationPageId />} />
