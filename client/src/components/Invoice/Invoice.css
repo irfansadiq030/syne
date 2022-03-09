@@ -102,3 +102,49 @@
     overflow-y: scroll;
   }
 }
+
+
+.font-dark-blue {
+  color: #324a5d !important;
+}
+.font-green {
+color: #39ca75 !important;
+}
+.font-purple {
+color: #ca54a8 !important;
+}
+.font-gold{
+color: #999868 !important;
+}
+.font-blue{
+color: #0080b8 !important;
+}
+.font-red{
+color: #E03227 !important;
+}
+.font-light-blue{
+ color: #0039F9 !important;
+}
+.font-dark-yellow{
+color: #F57E24!important;
+}
+.font-dark-green{
+  color: #00A35D !important;
+}
+.font-dark-gray{
+  color: #3D5B72 !important;
+}
+
+
+
+
+.page-link{
+  color: #00A35D !important;
+}
+.page-link-active{
+  color:white !important;
+  background-color: #00A35D !important;
+}
+.active-pag{
+  background-color: #00A35D !important;
+}

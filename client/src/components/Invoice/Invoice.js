@@ -162,6 +162,46 @@ const Invoice = () => {
             </div>
           </Col>
           <Col md={10}>
+          <Row>
+          <Col md={5}>
+            
+          </Col>
+
+           <Col className="table-scroll" md={4}>
+              <Table striped bordered hover className="invoice-table">
+              <tbody>
+                  <tr>
+                    <td className="bolder"><b>Total Amount</b></td>
+                    <td>1235</td>
+                    <td>1235</td>
+                    <td>1235</td>
+                  </tr>
+                  <tr>
+                    <td className="font-green"><b>Total Paid</b></td>
+                    <td>1235</td>
+                    <td>1235</td>
+                    <td>1235</td>
+                  </tr>
+                  <tr>
+                    <td className="font-blue"><b>Total Unpaid</b></td>
+                    <td>1235</td>
+                    <td>1235</td>
+                    <td>1235</td>
+                  </tr>
+                  <tr>
+                    <td className="font-purple"><b>Total Credits</b></td>
+                    <td>1235</td>
+                    <td>1235</td>
+                    <td>1235</td>
+                  </tr>
+              </tbody>
+              </Table>
+            </Col>
+            <Col md={3}>
+            <p>Total Amount Selected: <span className="font-green">€5000</span></p>
+            <p>Total Amount: <span className="font-green">€5000</span></p>
+          </Col>
+            </Row>
             <div className="table-scroll">
               <Table striped bordered hover className="quotation-table">
                 <thead className="invoice-table-head">
@@ -235,8 +275,8 @@ const Invoice = () => {
                                 <span aria-hidden="true">&laquo;</span>
                               </a>
                             </li>
-                            <li class="page-item active">
-                              <a class="page-link" href="/">
+                            <li class="active-pag">
+                              <a class="page-link page-link-active" href="/">
                                 1
                               </a>
                             </li>

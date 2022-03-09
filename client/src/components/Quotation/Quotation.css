@@ -215,3 +215,20 @@ body{
 .b-0{
   border-color: transparent !important;
 }
+ul{
+  padding-left: 0px !important;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-image: url('../../images/calendar-primary.svg');
+}
+
+.active-link-quote{
+  background-color:  #0080b8 !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+.link-quote{
+  color: #0080b8 !important;
+}

@@ -10,8 +10,11 @@ import {
   DropdownButton,
   Table,
 } from "react-bootstrap";
+import DatePicker from 'react-date-picker';
 import checkicon from "../../images/check-square.svg";
+import calandericon from "../../images/calendar-primary.svg";
 // import { Link } from "react-router-dom";
+
 const Quotation = () => {
   return (
     <Container fluid className="quotation-top">
@@ -71,6 +74,8 @@ const Quotation = () => {
         <li className="quotation-menu-item">
           <div className="quotation-datepicker ">
             <input type="date" className="form-control"/>
+            {/* <DatePicker className="form-control"/> */}
+                {/* <img src={calandericon} alt="" onClick={this.openDatepicker} /> */}
           </div>
         </li>
         <li className="quotation-menu-item">
@@ -278,65 +283,65 @@ const Quotation = () => {
                           <ul class="pagination pagination-sm">
                             <li class="page-item">
                               <a
-                                class="page-link"
+                                class="page-link link-quote"
                                 href="/"
                                 aria-label="Previous"
                               >
                                 <span aria-hidden="true">&laquo;</span>
                               </a>
                             </li>
-                            <li class="page-item active">
-                              <a class="page-link" href="/">
+                            <li class="page-item">
+                              <a class="page-link active-link-quote" href="/">
                                 1
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link link-quote" href="/">
                                 2
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link link-quote" href="/">
                                 3
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link link-quote" href="/">
                                 4
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link link-quote" href="/">
                                 5
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link link-quote" href="/">
                                 6
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link link-quote" href="/">
                                 7
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link link-quote" href="/">
                                 8
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link link-quote" href="/">
                                 9
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link link-quote" href="/">
                                 10
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/" aria-label="Next">
+                              <a class="page-link link-quote" href="/" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
                               </a>
                             </li>
