@@ -13,6 +13,7 @@ import {
 import DatePicker from 'react-date-picker';
 import checkicon from "../../images/check-square.svg";
 import calandericon from "../../images/calendar-primary.svg";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const Quotation = () => {
@@ -78,11 +79,11 @@ const Quotation = () => {
                 {/* <img src={calandericon} alt="" onClick={this.openDatepicker} /> */}
           </div>
         </li>
-        <li className="quotation-menu-item">
+        <li className="quotation-menu-item ">
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle bg-export p-2"
+              className="btn btn-sm btn-secondary dropdown-toggle bg-export p-2 br-10"
               data-toggle="dropdown"
               aria-expanded="false"
             >
@@ -110,7 +111,7 @@ const Quotation = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-danger dropdown-toggle bg-pdf p-2"
+              className="btn btn-sm btn-danger dropdown-toggle bg-pdf p-2 br-10"
               data-toggle="dropdown"
               aria-expanded="false"
             >
@@ -135,7 +136,7 @@ const Quotation = () => {
           </div>
         </li>
         <li className="quotation-menu-item">
-          <button type="button" class="btn btn-sm btn-danger bg-red p-2">
+          <button type="button" class="btn btn-sm btn-danger bg-red p-2 br-10">
             {" "}
             <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;
           </button>
@@ -147,12 +148,12 @@ const Quotation = () => {
       <div className="h-100">
         <Row className="h-100">
           <Col xs={12} md={2} className="left-col-quote-left-side">
-            <div className="quote-left-side  border rouded">
-              <button className="btn btn-sm btn-primary w-100 p-3 font-quote-button">
+            <div className="quote-left-side  border-rounded">
+             <Link to="/quotation/1"> <button className="btn btn-sm btn-primary w-100 p-3 font-quote-button br-10" >
                 {" "}
                 <b>+ Add New Quote</b>
                 <br />
-              </button>
+              </button></Link>
 
               <button className=" btn btn-sm btn-primary p-2  quotation-left-button">
                 <span>Draft</span>

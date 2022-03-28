@@ -1,6 +1,7 @@
 import React from "react";
 import "./Jobes.css";
-import { Col, Row, Container, Table } from "react-bootstrap";
+import { Col, Row, Container, Table} from "react-bootstrap";
+import { Link } from "react-router-dom";
 import checkicon from "../../images/check-square.svg";
 // import { Link } from "react-router-dom";
 const Jobes = () => {
@@ -68,7 +69,7 @@ const Jobes = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2"
+              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2 br-10"
               data-toggle="dropdown"
               aria-expanded="false"
             >
@@ -96,7 +97,7 @@ const Jobes = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2"
+              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2 br-10"
               data-toggle="dropdown"
               aria-expanded="false"
             >
@@ -121,7 +122,7 @@ const Jobes = () => {
           </div>
         </li>
         <li className="quotation-menu-item">
-          <button type="button" class="btn btn-sm btn-danger bg-red p-2">
+          <button type="button" class="btn btn-sm btn-danger bg-red p-2 br-10">
             {" "}
             <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;
           </button>
@@ -133,10 +134,10 @@ const Jobes = () => {
         <Row className="h-100">
           <Col xs={12} md={2} className="left-col-quote-left-side">
             <div className="quote-left-side  border rouded">
-              <button className="btn btn-sm btn-primary w-100 p-3  font-quote-button bg-yellow">
+            <Link to="/jobs/1"> <button className="btn btn-sm btn-primary w-100 p-3 br-10  font-quote-button bg-yellow">
                 {" "}
                 <b>+ Add New Job</b>
-              </button>
+              </button></Link>
 
               <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
                 <span> Draft</span>
@@ -215,7 +216,7 @@ const Jobes = () => {
 
                     <td>
                       <input type="radio" class="bg-secondary" />
-                      &nbsp;X
+                      &nbsp;&nbsp;&nbsp;X
                     </td>
                   </tr>
                   <tr>
@@ -242,7 +243,7 @@ const Jobes = () => {
 
                     <td>
                       <input type="radio" class="bg-secondary" />
-                      &nbsp;X
+                      &nbsp;&nbsp;&nbsp;X
                     </td>
                   </tr>
                   <tr>
@@ -269,7 +270,7 @@ const Jobes = () => {
 
                     <td>
                       <input type="radio" class="bg-secondary" />
-                      &nbsp;X
+                      &nbsp;&nbsp;&nbsp;X
                     </td>
                   </tr>
                   <tr class="bg-light border-bottom border-secondary">

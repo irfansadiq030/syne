@@ -8,12 +8,11 @@ const Login = () => {
   return (
     <>
       <div className="Login-container">
-        <Container>
           <Row className="Login-wrapper">
             <Col className="left-side" sm={8} md={8} lg={8}>
               <div className="image-map-Wrapper"></div>
             </Col>
-            <Col className="right-side" sm={4} md={4} lg={4}>
+            <Col className="right-side" sm={4} md={2} lg={3}>
               <div className="Logo-Wrapper">
                 <img
                   alt="notfound"
@@ -69,7 +68,6 @@ const Login = () => {
               </Form>
             </Col>
           </Row>
-        </Container>
       </div>
     </>
   );

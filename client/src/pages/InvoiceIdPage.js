@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 const InvoiceIdPage = () => {
   return (
     <div>
+      <Navbar />
       <InvoiceId />
       <BottomBar />
     </div>

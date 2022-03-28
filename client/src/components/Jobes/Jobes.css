@@ -124,3 +124,14 @@
 .link-job{
   color: #f57e24 !important;
 }
+.jobs-table-head{
+  line-height:30px !important;
+}
+
+.invoice-table-head{
+  line-height:30px !important;
+}
+
+.quotation-table-head{
+  line-height:30px !important;
+}

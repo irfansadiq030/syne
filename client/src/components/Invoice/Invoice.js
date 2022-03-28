@@ -2,6 +2,7 @@ import React from "react";
 import "./Invoice.css";
 import { Col, Row, Container, Table } from "react-bootstrap";
 import checkicon from "../../images/check-square.svg";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 const Invoice = () => {
   return (
@@ -68,7 +69,7 @@ const Invoice = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2"
+              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2 br-10"
               data-toggle="dropdown"
               aria-expanded="false"
             >
@@ -96,7 +97,7 @@ const Invoice = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2"
+              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2 br-10"
               data-toggle="dropdown"
               aria-expanded="false"
             >
@@ -121,7 +122,7 @@ const Invoice = () => {
           </div>
         </li>
         <li className="quotation-menu-item">
-          <button type="button" class="btn btn-sm btn-danger bg-red p-2">
+          <button type="button" class="btn btn-sm btn-danger bg-red p-2 br-10">
             {" "}
             <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;&nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;&nbsp;&nbsp;
           </button>
@@ -134,10 +135,10 @@ const Invoice = () => {
         <Row className="h-100">
           <Col xs={12} md={2} className="left-col-quote-left-side">
             <div className="quote-left-side  border rouded">
-              <button className="btn btn-sm btn-success bg-dark-green w-100 p-3 font-quote-button">
+             <Link to="/invoice/1"> <button className="btn btn-sm btn-success br-10 bg-dark-green w-100 p-3 font-quote-button">
                 {" "}
                 <b>+ Add New Invoice</b>
-              </button>
+              </button></Link>
 
               <button className=" btn btn-sm btn-primary p-2 quotation-left-button">
                 <span> Draft</span>
@@ -231,6 +232,164 @@ const Invoice = () => {
                           <option>FP Process</option>
                           <option>PW Process</option>
                           <option>LP Print</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>Q3766</td>
+                    <td>12/12/19</td>
+                    <td>@GHM</td>
+                    <td>Arts Forum Exhibition</td>
+                    <td>Inv00872</td>
+                    <td>&euro;222.45</td>
+                    <td>&euro;222.45</td>
+                    <td>&euro;222.45</td>
+                   
+                    <td>
+                      <input type="radio" class="bg-secondary" />
+                    </td>
+                    <td>
+                      <div className="form-group">
+                        <select className="form-control-sm form-select-sm bg-dark-gray text-light">
+                        <option selected> Unpaid</option>
+                          <option>Paid Card</option>
+                          <option>Paid Bank</option>
+                          <option>Credit Note</option>
+                          <option>Pro-Forma</option>
+                        </select>
+                      </div>
+                    </td>
+
+                    <td>Comment</td>
+                  </tr>
+
+                  <tr>
+                  <td>
+                      <div className="form-group">
+                        <select className="form-control-sm form-select-sm bg-green text-light b-0 bg-blue">
+                        <option>FP Process</option>
+                          <option>DPD Sent</option>
+                          <option>FP Process</option>
+                          <option>PW Process</option>
+                          <option selected>Draft</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>Q3766</td>
+                    <td>12/12/19</td>
+                    <td>@GHM</td>
+                    <td>Arts Forum Exhibition</td>
+                    <td>Inv00872</td>
+                    <td>&euro;222.45</td>
+                    <td>&euro;222.45</td>
+                    <td>&euro;222.45</td>
+                   
+                    <td>
+                      <input type="radio" class="bg-secondary" />
+                    </td>
+                    <td>
+                      <div className="form-group">
+                        <select className="form-control-sm form-select-sm bg-dark-gray text-light">
+                        <option selected> Unpaid</option>
+                          <option>Paid Card</option>
+                          <option>Paid Bank</option>
+                          <option>Credit Note</option>
+                          <option>Pro-Forma</option>
+                        </select>
+                      </div>
+                    </td>
+
+                    <td>Comment</td>
+                  </tr>
+
+
+                  <tr>
+                  <td>
+                      <div className="form-group">
+                        <select className="form-control-sm form-select-sm bg-green text-light b-0 tab-purple">
+                        <option>FP Process</option>
+                          <option>DPD Sent</option>
+                          <option>FP Process</option>
+                          <option selected>PW Process</option>
+                          <option>LP Print</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>Q3766</td>
+                    <td>12/12/19</td>
+                    <td>@GHM</td>
+                    <td>Arts Forum Exhibition</td>
+                    <td>Inv00872</td>
+                    <td>&euro;222.45</td>
+                    <td>&euro;222.45</td>
+                    <td>&euro;222.45</td>
+                   
+                    <td>
+                      <input type="radio" class="bg-secondary" />
+                    </td>
+                    <td>
+                      <div className="form-group">
+                        <select className="form-control-sm form-select-sm bg-dark-gray text-light">
+                        <option selected> Unpaid</option>
+                          <option>Paid Card</option>
+                          <option>Paid Bank</option>
+                          <option>Credit Note</option>
+                          <option>Pro-Forma</option>
+                        </select>
+                      </div>
+                    </td>
+
+                    <td>Comment</td>
+                  </tr>
+
+                  <tr>
+                  <td>
+                      <div className="form-group">
+                        <select className="form-control-sm form-select-sm  text-light b-0 skyblue">
+                        <option>FP Process</option>
+                          <option>DPD Sent</option>
+                          <option>FP Process</option>
+                          <option selected>DPD Sent</option>
+                          <option>LP Print</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>Q3766</td>
+                    <td>12/12/19</td>
+                    <td>@GHM</td>
+                    <td>Arts Forum Exhibition</td>
+                    <td>Inv00872</td>
+                    <td>&euro;222.45</td>
+                    <td>&euro;222.45</td>
+                    <td>&euro;222.45</td>
+                   
+                    <td>
+                      <input type="radio" class="bg-secondary" />
+                    </td>
+                    <td>
+                      <div className="form-group">
+                        <select className="form-control-sm form-select-sm bg-dark-gray text-light">
+                        <option selected> Unpaid</option>
+                          <option>Paid Card</option>
+                          <option>Paid Bank</option>
+                          <option>Credit Note</option>
+                          <option>Pro-Forma</option>
+                        </select>
+                      </div>
+                    </td>
+
+                    <td>Comment</td>
+                  </tr>
+
+
+                  <tr>
+                  <td>
+                      <div className="form-group">
+                        <select className="form-control-sm form-select-sm text-light b-0 golden">
+                        <option>FP Process</option>
+                          <option>DPD Sent</option>
+                          <option>FP Process</option>
+                          <option>PW Process</option>
+                          <option selected>LP Print</option>
                         </select>
                       </div>
                     </td>
