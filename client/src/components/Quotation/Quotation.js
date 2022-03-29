@@ -145,9 +145,9 @@ const Quotation = () => {
       </Col>
       </Row>
 
-      <div className="h-100">
+      <div className="h-100 ">
         <Row className="h-100">
-          <Col xs={12} md={2} className="left-col-quote-left-side">
+          <Col xs={12} md={2} className="left-col-quote-left-side b1">
             <div className="quote-left-side  border-rounded">
              <Link to="/quotation/1"> <button className="btn btn-sm btn-primary w-100 p-3 font-quote-button br-10" >
                 {" "}

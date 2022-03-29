@@ -241,7 +241,7 @@ const JobsId = () => {
                 type="button"
                 class="btn btn-lg font-weight-bold text-white btn-warning bg-dark-yellow"
                 data-toggle="modal"
-                data-target="#exampleModalCenter"
+                data-target="#bespokeadd"
               >
                 + Add Bespoke
               </button>
@@ -466,7 +466,7 @@ const JobsId = () => {
                         </Col>
                       </Row>
                       <Container>
-                        <Row className="mb-3 d-flex justify-content-between">
+                        <Row className="mb-3 d-flex justify-content-between float-right">
                           <Col>
                             <button
                               type="button"
@@ -483,6 +483,7 @@ const JobsId = () => {
                               class="btn btn-md font-weight-bold text-dark btn-light"
                               data-toggle="dropdown"
                               aria-expanded="false"
+                              data-dismiss="modal"
                             >
                               Close
                             </button>

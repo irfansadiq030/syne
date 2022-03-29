@@ -156,3 +156,7 @@ color: #F57E24!important;
 .golden{
   background:#999868 !important;
 }
+
+.b1{
+  border: solid 1px lightgray;
+}

@@ -242,14 +242,14 @@ const QuotationId = () => {
                 type="button"
                 class="btn btn-lg font-weight-bold text-white btn-warning bg-dark-yellow"
                 data-toggle="modal"
-                data-target="#exampleModalCenter"
+                data-target="#bespokeadd"
               >
                 + Add Bespoke
               </button>
             </div>
 
             <div
-              className="modal fade  "
+              className="modal fade "
               id="bespokeadd"
               tabindex="-1"
               role="dialog"
@@ -261,7 +261,7 @@ const QuotationId = () => {
                 role="document"
               >
                 <div className="modal-content Bespole__modal">
-                  <div className="modal-header  ">
+                  <div className="modal-header">
                     <h5
                       className="modal-title Bespole__modal__heading p-2"
                       id="bespokeadd"
@@ -467,7 +467,7 @@ const QuotationId = () => {
                         </Col>
                       </Row>
                       <Container>
-                        <Row className="mb-3 d-flex justify-content-between">
+                        <Row className="mb-3 d-flex justify-content-end float-right">
                           <Col>
                             <button
                               type="button"
@@ -484,6 +484,7 @@ const QuotationId = () => {
                               class="btn btn-md font-weight-bold text-dark btn-light"
                               data-toggle="dropdown"
                               aria-expanded="false"
+                              data-dismiss="modal"
                             >
                               Close
                             </button>
