@@ -10,7 +10,7 @@ import ForgetPasswordPage from "../../pages/ForgetPasswordPage";
 import InvoiceIdPage from "../../pages/InvoiceIdPage";
 import InvoicePage from "../../pages/InvoicePage";
 import JobIdPage from "../../pages/JobIdPage";
-
+import ProductPage from "../../pages/ProductPage";
 import JobsPage from "../../pages/JobsPage";
 import LoginPage from "../../pages/LoginPage";
 import QuotationPage from "../../pages/QuotationPage";
@@ -31,6 +31,7 @@ const AllRoutes = () => {
         <Route path="/quotation/:id" element={<QuotationPageId />} />
         <Route path="/quotation/addproduct" element={<AddProductQuotesPage />}/>
         <Route path="/jobs" element={<JobsPage />} />
+        <Route path="/products" element={<ProductPage />} />
         <Route path="/jobs/:id" element={<JobIdPage />} />
         <Route path="/jobs/addproduct" element={<AddProductJobsPage />} />
         <Route path="/invoice" element={<InvoicePage />} />

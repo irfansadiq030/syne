@@ -1,20 +1,19 @@
-import React from "react";
-import "./Companies.css";
+import React from 'react'
+import "./Product.css";
 import { Col, Row, Container, Table } from "react-bootstrap";
-
 import editicon from "../../images/edit-primary.svg";
 import Delete_icon from "../../images/Delete_icon.svg";
-// import { Link } from "react-router-dom";
-const Companies = () => {
-  return (
-  
-    <Container fluid className="quotation-top">
+import BottomBar from '../BottomBar/BottomBar';
 
-<Row className='mt-3 mb-3'>
+
+const Product = () => {
+  return (
+      <>
+    <Row className='mt-3 ml-1'>
       <Col xs={12} md={2}>
-      <h5 className="h5-quotation">Companies</h5>
+      <h5 className="h5-quotation">Products</h5>
       </Col>
-      <Col xs={12} md={4}>
+      <Col xs={12} md={4} className="ml-8">
       <div className="input-group">
             <input
               type="text"
@@ -37,41 +36,9 @@ const Companies = () => {
             </div>
           </div>
       </Col>
-      <Col xs={12} md={4}>
-
-      </Col>
-
-      <Col xs={12} md={1}>
-      <div className="btn-group">
-            <button
-              type="button"
-              className="btn btn-sm Export__btn dropdown-toggle"
-              data-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i className="fas fa-external-link-alt"></i>
-              Export
-            </button>
-            <div className="dropdown-menu">
-              <a className="dropdown-item" href="/">
-                Action
-              </a>
-              <a className="dropdown-item" href="/">
-                Another action
-              </a>
-              <a className="dropdown-item" href="/">
-                Something else here
-              </a>
-              <div className="dropdown-divider"></div>
-              <a className="dropdown-item" href="/">
-                Separated link
-              </a>
-            </div>
-          </div>
-      </Col>
     </Row>
-
-
+    <Container fluid className="quotation-top">
+       
       <div className="h-100">
         <Row className="h-100">
           <Col xs={12} md={2} className="left-col-quote-left-side">
@@ -79,14 +46,14 @@ const Companies = () => {
               <button
                 className="btn  font-weight-bold btn-md Add__new__company__btn w-100"
                 data-toggle="modal"
-                data-target="#companymodal"
+                data-target="#newcontact"
               >
                 {" "}
-                + Add New Company
+                + Add New Product
               </button>
               <div
                 className="modal fade"
-                id="companymodal"
+                id="newcontact"
                 tabindex="-1"
                 role="dialog"
                 aria-labelledby="exampleModalCenterTitle"
@@ -101,10 +68,21 @@ const Companies = () => {
                       <form>
                         <Container>
                           <Row>
-                            <Col xs={6} lg={4}>
+                            <Col lg={12}>
                               <div className="form-group">
                                 <label className="font-weight-bold">
-                                  Name:
+                                  Image:
+                                </label>
+                                <input
+                                  type="file"
+                                  class="form-control bg-light"
+                                />
+                              </div>
+                            </Col>
+                            <Col lg={6}>
+                              <div className="form-group">
+                                <label className="font-weight-bold">
+                                  Item Code:
                                 </label>
                                 <input
                                   type="text"
@@ -112,10 +90,10 @@ const Companies = () => {
                                 />
                               </div>
                             </Col>
-                            <Col xs={6} lg={4}>
+                            <Col lg={6}>
                               <div className="form-group">
                                 <label className="font-weight-bold">
-                                  Town:
+                                  Category:
                                 </label>
                                 <input
                                   type="text"
@@ -123,10 +101,10 @@ const Companies = () => {
                                 />
                               </div>
                             </Col>
-                            <Col xs={6} lg={4}>
+                            <Col lg={2}>
                               <div className="form-group">
                                 <label className="font-weight-bold">
-                                  Country:
+                                  Unit:
                                 </label>
                                 <input
                                   type="text"
@@ -134,10 +112,10 @@ const Companies = () => {
                                 />
                               </div>
                             </Col>
-                            <Col xs={6} lg={4}>
+                            <Col lg={2}>
                               <div className="form-group">
                                 <label className="font-weight-bold">
-                                  Address 1:
+                                  Cost:
                                 </label>
                                 <input
                                   type="text"
@@ -145,10 +123,10 @@ const Companies = () => {
                                 />
                               </div>
                             </Col>
-                            <Col xs={6} lg={4}>
+                            <Col lg={2}>
                               <div className="form-group">
                                 <label className="font-weight-bold">
-                                  Address 2:
+                                  Price:
                                 </label>
                                 <input
                                   type="text"
@@ -156,21 +134,10 @@ const Companies = () => {
                                 />
                               </div>
                             </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">
-                                  Address 3:
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={4}>
+                            <Col lg={6}>
                               <div className="form-group">
                                 <label className="font-weight-bold ">
-                                  Postcode/zip:
+                                  Product Tags:
                                 </label>
                                 <input
                                   type="text"
@@ -178,130 +145,24 @@ const Companies = () => {
                                 />
                               </div>
                             </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">
-                                  Email:
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">
-                                  Telephone:
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">
-                                  Mobile:
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">Fax:</label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">
-                                  Parent Company:
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">
-                                  Default price list:
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">
-                                  Type:
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">
-                                  Account Reference:
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">
-                                  Payment Terms:
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={4}>
-                              <div className="form-group">
-                                <label className="font-weight-bold">
-                                  Account Manager:
-                                </label>
-                                <input
-                                  type="text"
-                                  class="form-control bg-light"
-                                />
-                              </div>
-                            </Col>
-                            <Col xs={6} lg={10}>
+
+                            <Col lg={12}>
                               <div className="form-group">
                                 <label
                                   for="assignd-user-select"
                                   className="font-weight-bold"
                                 >
-                                  Notes
+                                  Description
                                 </label>
                                 <textarea
                                   id="details"
                                   className="form-control bg-light"
-                                  rows="2"
+                                  rows="4"
                                 ></textarea>
                               </div>
                             </Col>
                           </Row>
+                          <hr />
                           <Container>
                             <Row className="mb-3 mt-3 d-flex justify-content-between">
                               <Col>
@@ -311,7 +172,7 @@ const Companies = () => {
                                   data-toggle="dropdown"
                                   aria-expanded="false"
                                 >
-                                  Add Company
+                                  Add Product
                                 </button>
                               </Col>
                               <Col>
@@ -321,6 +182,7 @@ const Companies = () => {
                                   data-toggle="dropdown"
                                   aria-expanded="false"
                                   data-dismiss="modal"
+                                  
                                 >
                                   Close
                                 </button>
@@ -335,7 +197,7 @@ const Companies = () => {
               </div>
               <div className="btn-group mt-3">
                 <div className="d-flex flex-column">
-                  <h6 className="font-weight-bold">Company Type:</h6>
+                  <h6 className="font-weight-bold">All Categories:</h6>
                   <button
                     type="button"
                     className="btn  dropdown-toggle Company__dropdown__category"
@@ -343,7 +205,7 @@ const Companies = () => {
                     data-display="static"
                     aria-expanded="false"
                   >
-                    All Types
+                    All Categories
                   </button>
                   <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
                     <button className="dropdown-item" type="button">
@@ -360,32 +222,7 @@ const Companies = () => {
               </div>
               <div className="btn-group mt-3">
                 <div className="d-flex flex-column">
-                  <h6 className="font-weight-bold">Company</h6>
-                  <button
-                    type="button"
-                    className="btn  dropdown-toggle Company__dropdown__category"
-                    data-toggle="dropdown"
-                    data-display="static"
-                    aria-expanded="false"
-                  >
-                    All Companies
-                  </button>
-                  <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-                    <button className="dropdown-item" type="button">
-                      Action
-                    </button>
-                    <button className="dropdown-item" type="button">
-                      Another action
-                    </button>
-                    <button className="dropdown-item" type="button">
-                      Something else here
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="btn-group mt-3">
-                <div className="d-flex flex-column">
-                  <h6 className="font-weight-bold">Company Tags (Must have)</h6>
+                  <h6 className="font-weight-bold">Product Tags</h6>
                   <button
                     type="button"
                     className="btn  dropdown-toggle Company__dropdown__category"
@@ -410,7 +247,7 @@ const Companies = () => {
               </div>
               <div className="btn-group mt-3">
                 <div className="d-flex flex-column">
-                  <h6 className="font-weight-bold">Contact Tags (Must have)</h6>
+                  <h6 className="font-weight-bold">Min Price (0)</h6>
                   <button
                     type="button"
                     className="btn  dropdown-toggle Company__dropdown__category"
@@ -418,7 +255,7 @@ const Companies = () => {
                     data-display="static"
                     aria-expanded="false"
                   >
-                    Add Category
+                    Min Price
                   </button>
                   <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
                     <button className="dropdown-item" type="button">
@@ -435,7 +272,7 @@ const Companies = () => {
               </div>
               <div className="btn-group mt-3">
                 <div className="d-flex flex-column">
-                  <h6 className="font-weight-bold">Account Managers:</h6>
+                  <h6 className="font-weight-bold">Max Price (0)</h6>
                   <button
                     type="button"
                     className="btn  dropdown-toggle Company__dropdown__category"
@@ -443,7 +280,7 @@ const Companies = () => {
                     data-display="static"
                     aria-expanded="false"
                   >
-                    All Acc Managers
+                    Max Price
                   </button>
                   <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
                     <button className="dropdown-item" type="button">
@@ -468,31 +305,28 @@ const Companies = () => {
             <div className="table-scroll">
               <Table striped bordered hover className="quotation-table">
                 <thead className="companies-table-head">
-                  <tr>
-                    <th>Company Name</th>
-                    <th>Parent Company</th>
-                    <th>Town</th>
-                    <th>Address</th>
-                    <th>Email</th>
-
-                    <th>Telephone</th>
-                    <th>Mobile</th>
-                    <th>Tags</th>
+                  <tr className='p-5'>
+                    <th>Image</th>
+                    <th>Item Code</th>
+                    <th>Company</th>
+                    <th>Description</th>
+                    <th>Unit</th>
+                    <th>Cost</th>
+                    <th>Prices</th>
                     <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>GHM</td>
-                    <td>Arts forum</td>
+                    <td></td>
+                    <td>Arts Forum Dec Exhibition</td>
                     <td>America</td>
 
-                    <td>Arts Forum Exhibition</td>
-                    <td>Example@gmial.com</td>
-                    <td>+1122233333</td>
-                    <td>+1122233333</td>
+                    <td>Arts Forum Dec Exhibition</td>
+                    <td>5433</td>
+                    <td>5433</td>
 
-                    <td>&euro;222.45</td>
+                    <td>3333</td>
 
                     <td>
                       <div className="quotation__editdelete_icon">
@@ -500,7 +334,7 @@ const Companies = () => {
                           src={editicon}
                           alt="editicon"
                           data-toggle="modal"
-                          data-target="#companymodal"
+                          data-target="#newcontact"
                         />
                         <img
                           src={Delete_icon}
@@ -523,7 +357,7 @@ const Companies = () => {
                           >
                             <div className="modal-content p-3">
                               <div className="delete__modal__text">
-                                <div>Comany Name: GHM</div>
+                                <div>Contact Name: F Name</div>
                                 <div>Are you Sure you want to Delete ?</div>
                               </div>
                               <div className="delete__modal__button__div">
@@ -546,17 +380,17 @@ const Companies = () => {
                     </td>
                   </tr>
 
+
                   <tr>
-                    <td>GHM</td>
-                    <td>Arts forum</td>
+                    <td></td>
+                    <td>Arts Forum Dec Exhibition</td>
                     <td>America</td>
 
-                    <td>Arts Forum Exhibition</td>
-                    <td>Example@gmial.com</td>
-                    <td>+1122233333</td>
-                    <td>+1122233333</td>
+                    <td>Arts Forum Dec Exhibition</td>
+                    <td>5433</td>
+                    <td>5433</td>
 
-                    <td>&euro;222.45</td>
+                    <td>3333</td>
 
                     <td>
                       <div className="quotation__editdelete_icon">
@@ -564,7 +398,7 @@ const Companies = () => {
                           src={editicon}
                           alt="editicon"
                           data-toggle="modal"
-                          data-target="#companymodal"
+                          data-target="#newcontact"
                         />
                         <img
                           src={Delete_icon}
@@ -587,135 +421,7 @@ const Companies = () => {
                           >
                             <div className="modal-content p-3">
                               <div className="delete__modal__text">
-                                <div>Comany Name: GHM</div>
-                                <div>Are you Sure you want to Delete ?</div>
-                              </div>
-                              <div className="delete__modal__button__div">
-                                <div>
-                                  <button className="delete__modal__button">
-                                    <i class="far fa-trash-alt"></i>
-                                    <span>Delete</span>
-                                  </button>
-                                </div>
-                                <div>
-                                  <button className="close__modal__button">
-                                    Close
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>GHM</td>
-                    <td>Arts forum</td>
-                    <td>America</td>
-
-                    <td>Arts Forum Exhibition</td>
-                    <td>Example@gmial.com</td>
-                    <td>+1122233333</td>
-                    <td>+1122233333</td>
-
-                    <td>&euro;222.45</td>
-
-                    <td>
-                      <div className="quotation__editdelete_icon">
-                        <img
-                          src={editicon}
-                          alt="editicon"
-                          data-toggle="modal"
-                          data-target="#companymodal"
-                        />
-                        <img
-                          src={Delete_icon}
-                          data-toggle="modal"
-                          data-target="#Delete_modal"
-                          alt="deleteicon"
-                        />
-
-                        <div
-                          className="modal fade"
-                          id="Delete_modal"
-                          tabindex="-1"
-                          role="dialog"
-                          aria-labelledby="exampleModalCenterTitle"
-                          aria-hidden="true"
-                        >
-                          <div
-                            className="modal-dialog modal-dialog-centered"
-                            role="document"
-                          >
-                            <div className="modal-content p-3">
-                              <div className="delete__modal__text">
-                                <div>Comany Name: GHM</div>
-                                <div>Are you Sure you want to Delete ?</div>
-                              </div>
-                              <div className="delete__modal__button__div">
-                                <div>
-                                  <button className="delete__modal__button">
-                                    <i class="far fa-trash-alt"></i>
-                                    <span>Delete</span>
-                                  </button>
-                                </div>
-                                <div>
-                                  <button className="close__modal__button">
-                                    Close
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>GHM</td>
-                    <td>Arts forum</td>
-                    <td>America</td>
-
-                    <td>Arts Forum Exhibition</td>
-                    <td>Example@gmial.com</td>
-                    <td>+1122233333</td>
-                    <td>+1122233333</td>
-
-                    <td>&euro;222.45</td>
-
-                    <td>
-                      <div className="quotation__editdelete_icon">
-                        <img
-                          src={editicon}
-                          alt="editicon"
-                          data-toggle="modal"
-                          data-target="#companymodal"
-                        />
-                        <img
-                          src={Delete_icon}
-                          data-toggle="modal"
-                          data-target="#Delete_modal"
-                          alt="deleteicon"
-                        />
-
-                        <div
-                          className="modal fade"
-                          id="Delete_modal"
-                          tabindex="-1"
-                          role="dialog"
-                          aria-labelledby="exampleModalCenterTitle"
-                          aria-hidden="true"
-                        >
-                          <div
-                            className="modal-dialog modal-dialog-centered"
-                            role="document"
-                          >
-                            <div className="modal-content p-3">
-                              <div className="delete__modal__text">
-                                <div>Comany Name: GHM</div>
+                                <div>Contact Name: F Name</div>
                                 <div>Are you Sure you want to Delete ?</div>
                               </div>
                               <div className="delete__modal__button__div">
@@ -739,17 +445,17 @@ const Companies = () => {
                   </tr>
 
 
+
                   <tr>
-                    <td>GHM</td>
-                    <td>Arts forum</td>
+                    <td></td>
+                    <td>Arts Forum Dec Exhibition</td>
                     <td>America</td>
 
-                    <td>Arts Forum Exhibition</td>
-                    <td>Example@gmial.com</td>
-                    <td>+1122233333</td>
-                    <td>+1122233333</td>
+                    <td>Arts Forum Dec Exhibition</td>
+                    <td>5433</td>
+                    <td>5433</td>
 
-                    <td>&euro;222.45</td>
+                    <td>3333</td>
 
                     <td>
                       <div className="quotation__editdelete_icon">
@@ -757,7 +463,7 @@ const Companies = () => {
                           src={editicon}
                           alt="editicon"
                           data-toggle="modal"
-                          data-target="#companymodal"
+                          data-target="#newcontact"
                         />
                         <img
                           src={Delete_icon}
@@ -780,7 +486,72 @@ const Companies = () => {
                           >
                             <div className="modal-content p-3">
                               <div className="delete__modal__text">
-                                <div>Comany Name: GHM</div>
+                                <div>Contact Name: F Name</div>
+                                <div>Are you Sure you want to Delete ?</div>
+                              </div>
+                              <div className="delete__modal__button__div">
+                                <div>
+                                  <button className="delete__modal__button">
+                                    <i class="far fa-trash-alt"></i>
+                                    <span>Delete</span>
+                                  </button>
+                                </div>
+                                <div>
+                                  <button className="close__modal__button">
+                                    Close
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+
+
+                  <tr>
+                    <td></td>
+                    <td>Arts Forum Dec Exhibition</td>
+                    <td>America</td>
+
+                    <td>Arts Forum Dec Exhibition</td>
+                    <td>5433</td>
+                    <td>5433</td>
+
+                    <td>3333</td>
+
+                    <td>
+                      <div className="quotation__editdelete_icon">
+                        <img
+                          src={editicon}
+                          alt="editicon"
+                          data-toggle="modal"
+                          data-target="#newcontact"
+                        />
+                        <img
+                          src={Delete_icon}
+                          data-toggle="modal"
+                          data-target="#Delete_modal"
+                          alt="deleteicon"
+                        />
+
+                        <div
+                          className="modal fade"
+                          id="Delete_modal"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="exampleModalCenterTitle"
+                          aria-hidden="true"
+                        >
+                          <div
+                            className="modal-dialog modal-dialog-centered"
+                            role="document"
+                          >
+                            <div className="modal-content p-3">
+                              <div className="delete__modal__text">
+                                <div>Contact Name: F Name</div>
                                 <div>Are you Sure you want to Delete ?</div>
                               </div>
                               <div className="delete__modal__button__div">
@@ -805,16 +576,15 @@ const Companies = () => {
 
 
                   <tr>
-                    <td>GHM</td>
-                    <td>Arts forum</td>
+                    <td></td>
+                    <td>Arts Forum Dec Exhibition</td>
                     <td>America</td>
 
-                    <td>Arts Forum Exhibition</td>
-                    <td>Example@gmial.com</td>
-                    <td>+1122233333</td>
-                    <td>+1122233333</td>
+                    <td>Arts Forum Dec Exhibition</td>
+                    <td>5433</td>
+                    <td>5433</td>
 
-                    <td>&euro;222.45</td>
+                    <td>3333</td>
 
                     <td>
                       <div className="quotation__editdelete_icon">
@@ -822,7 +592,7 @@ const Companies = () => {
                           src={editicon}
                           alt="editicon"
                           data-toggle="modal"
-                          data-target="#companymodal"
+                          data-target="#newcontact"
                         />
                         <img
                           src={Delete_icon}
@@ -845,7 +615,7 @@ const Companies = () => {
                           >
                             <div className="modal-content p-3">
                               <div className="delete__modal__text">
-                                <div>Comany Name: GHM</div>
+                                <div>Contact Name: F Name</div>
                                 <div>Are you Sure you want to Delete ?</div>
                               </div>
                               <div className="delete__modal__button__div">
@@ -875,15 +645,14 @@ const Companies = () => {
                           <ul class="pagination pagination-sm">
                             <li class="page-item">
                               <a
-                                class="page-link text-purple"
+                                class="page-link"
                                 href="/"
                                 aria-label="Previous"
-                                
                               >
                                 <span aria-hidden="true">&laquo;</span>
                               </a>
                             </li>
-                            <li class="page-item active">
+                            <li class="page-item ">
                               <a class="page-link background-active text-white" href="/">
                                 1
                               </a>
@@ -909,7 +678,7 @@ const Companies = () => {
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link text-purple" href="/">
+                              <a class="page-link" href="/">
                                 6
                               </a>
                             </li>
@@ -939,7 +708,7 @@ const Companies = () => {
                               </a>
                             </li>
                           </ul>
-                        </nav>
+                          </nav>
                         <div class="form-group row ml-3 align-items-center input-group-sm">
                           <select
                             class="form-control col"
@@ -962,6 +731,7 @@ const Companies = () => {
                           </label>
                         </div>
                       </div>
+                      
                     </td>
                   </tr>
                 </tbody>
@@ -971,7 +741,11 @@ const Companies = () => {
         </Row>
       </div>
     </Container>
-  );
-};
+    <div>
+      <BottomBar/>
+    </div>
+      </>
+  )
+}
 
-export default Companies;
+export default Product

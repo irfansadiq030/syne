@@ -8,12 +8,13 @@ import Delete_icon from "../../images/Delete_icon.svg";
 const Contacts = () => {
   return (
     <Container fluid className="quotation-top">
-      <ul className="companies__menu">
-        <li className="quotation-menu-item">
-          <h5 className="h5-quotation">Contacts</h5>
-        </li>
-        <li className="quotation-menu-item">
-          <div className="input-group">
+
+<Row className='mt-3 mb-3'>
+      <Col xs={12} md={2}>
+      <h5 className="h5-quotation">Contacts</h5>
+      </Col>
+      <Col xs={12} md={4}>
+      <div className="input-group">
             <input
               type="text"
               className="form-control"
@@ -23,21 +24,24 @@ const Contacts = () => {
             />
             <div className="input-group-append" id="button-addon4">
               <button
-                className="btn text-white  company__search__btn"
+                className="btn text-white  company__search__btn br-0"
                 type="button"
               >
-                <i className="fas fa-search"></i>
+                <i className="fas fa-search"></i> 
                 Search
               </button>
-              <button className="btn btn-outline-secondary " type="button">
+              <button className="btn btn-outline-secondary br-2" type="button">
                 Advanced
               </button>
             </div>
           </div>
-        </li>
+      </Col>
+      <Col xs={12} md={4}>
 
-        <li className="quotation-menu-item">
-          <div className="btn-group">
+      </Col>
+
+      <Col xs={12} md={1}>
+      <div className="btn-group">
             <button
               type="button"
               className="btn btn-sm Export__btn dropdown-toggle"
@@ -63,8 +67,8 @@ const Contacts = () => {
               </a>
             </div>
           </div>
-        </li>
-      </ul>
+      </Col>
+    </Row>
 
       <div className="h-100">
         <Row className="h-100">
@@ -304,6 +308,7 @@ const Contacts = () => {
                                   className="btn btn-md font-weight-bold text-dark  AddCompany__modal__closebtn"
                                   data-toggle="dropdown"
                                   aria-expanded="false"
+                                  data-dismiss="modal"
                                 >
                                   Close
                                 </button>
@@ -441,7 +446,7 @@ const Contacts = () => {
                   </div>
                 </div>
               </div>
-              <button className="btn font-weight-bold btn-md Add__new__company__btn w-100">
+              <button className="btn font-weight-bold btn-md Add__new__company__btn w-100 bg-blue">
                 {" "}
                 Clear Filters
               </button>
@@ -467,6 +472,205 @@ const Contacts = () => {
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>GHM</td>
+                    <td>F Name</td>
+                    <td>L Name</td>
+
+                    <td>GHM</td>
+                    <td>Americs</td>
+                    <td>Ats Forum ec Exhibition</td>
+
+                    <td>example@gmail.com</td>
+                    <td>+1122233333</td>
+                    <td>+1122233333</td>
+                    <td>abc</td>
+
+                    <td>
+                      <div className="quotation__editdelete_icon">
+                        <img
+                          src={editicon}
+                          alt="editicon"
+                          data-toggle="modal"
+                          data-target="#newcontact"
+                        />
+                        <img
+                          src={Delete_icon}
+                          data-toggle="modal"
+                          data-target="#Delete_modal"
+                          alt="deleteicon"
+                        />
+
+                        <div
+                          className="modal fade"
+                          id="Delete_modal"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="exampleModalCenterTitle"
+                          aria-hidden="true"
+                        >
+                          <div
+                            className="modal-dialog modal-dialog-centered"
+                            role="document"
+                          >
+                            <div className="modal-content p-3">
+                              <div className="delete__modal__text">
+                                <div>Contact Name: F Name</div>
+                                <div>Are you Sure you want to Delete ?</div>
+                              </div>
+                              <div className="delete__modal__button__div" data-dismiss="modal">
+                                <div>
+                                  <button className="delete__modal__button" >
+                                    <i class="far fa-trash-alt"></i>
+                                    <span>Delete</span>
+                                  </button>
+                                </div>
+                                <div>
+                                  <button className="close__modal__button">
+                                    Close
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>GHM</td>
+                    <td>F Name</td>
+                    <td>L Name</td>
+
+                    <td>GHM</td>
+                    <td>Americs</td>
+                    <td>Ats Forum ec Exhibition</td>
+
+                    <td>example@gmail.com</td>
+                    <td>+1122233333</td>
+                    <td>+1122233333</td>
+                    <td>abc</td>
+
+                    <td>
+                      <div className="quotation__editdelete_icon">
+                        <img
+                          src={editicon}
+                          alt="editicon"
+                          data-toggle="modal"
+                          data-target="#newcontact"
+                        />
+                        <img
+                          src={Delete_icon}
+                          data-toggle="modal"
+                          data-target="#Delete_modal"
+                          alt="deleteicon"
+                        />
+
+                        <div
+                          className="modal fade"
+                          id="Delete_modal"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="exampleModalCenterTitle"
+                          aria-hidden="true"
+                        >
+                          <div
+                            className="modal-dialog modal-dialog-centered"
+                            role="document"
+                          >
+                            <div className="modal-content p-3">
+                              <div className="delete__modal__text">
+                                <div>Contact Name: F Name</div>
+                                <div>Are you Sure you want to Delete ?</div>
+                              </div>
+                              <div className="delete__modal__button__div">
+                                <div>
+                                  <button className="delete__modal__button">
+                                    <i class="far fa-trash-alt"></i>
+                                    <span>Delete</span>
+                                  </button>
+                                </div>
+                                <div>
+                                  <button className="close__modal__button">
+                                    Close
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>GHM</td>
+                    <td>F Name</td>
+                    <td>L Name</td>
+
+                    <td>GHM</td>
+                    <td>Americs</td>
+                    <td>Ats Forum ec Exhibition</td>
+
+                    <td>example@gmail.com</td>
+                    <td>+1122233333</td>
+                    <td>+1122233333</td>
+                    <td>abc</td>
+
+                    <td>
+                      <div className="quotation__editdelete_icon">
+                        <img
+                          src={editicon}
+                          alt="editicon"
+                          data-toggle="modal"
+                          data-target="#newcontact"
+                        />
+                        <img
+                          src={Delete_icon}
+                          data-toggle="modal"
+                          data-target="#Delete_modal"
+                          alt="deleteicon"
+                        />
+
+                        <div
+                          className="modal fade"
+                          id="Delete_modal"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="exampleModalCenterTitle"
+                          aria-hidden="true"
+                        >
+                          <div
+                            className="modal-dialog modal-dialog-centered"
+                            role="document"
+                          >
+                            <div className="modal-content p-3">
+                              <div className="delete__modal__text">
+                                <div>Contact Name: F Name</div>
+                                <div>Are you Sure you want to Delete ?</div>
+                              </div>
+                              <div className="delete__modal__button__div">
+                                <div>
+                                  <button className="delete__modal__button">
+                                    <i class="far fa-trash-alt"></i>
+                                    <span>Delete</span>
+                                  </button>
+                                </div>
+                                <div>
+                                  <button className="close__modal__button">
+                                    Close
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+
                   <tr>
                     <td>GHM</td>
                     <td>F Name</td>
@@ -540,7 +744,7 @@ const Contacts = () => {
                           <ul class="pagination pagination-sm">
                             <li class="page-item">
                               <a
-                                class="page-link"
+                                class="page-link  text-purple"
                                 href="/"
                                 aria-label="Previous"
                               >
@@ -548,52 +752,52 @@ const Contacts = () => {
                               </a>
                             </li>
                             <li class="page-item active">
-                              <a class="page-link" href="/">
+                              <a class="page-link background-active text-white" href="/">
                                 1
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link  text-purple" href="/">
                                 2
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link  text-purple" href="/">
                                 3
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link  text-purple" href="/">
                                 4
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link  text-purple" href="/">
                                 5
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link  text-purple" href="/">
                                 6
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link  text-purple" href="/">
                                 7
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link  text-purple" href="/">
                                 8
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link  text-purple" href="/">
                                 9
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link" href="/">
+                              <a class="page-link  text-purple" href="/">
                                 10
                               </a>
                             </li>

@@ -26,7 +26,9 @@ const Navbar = () => {
         <Link to="/invoice" className="Nav__item__Link">
           <li className="nav-item">Invoice</li>
         </Link>
+        <Link to="/products" className="Nav__item__Link">
         <li className="nav-item">Product </li>
+        </Link>
         <li class="nav-item dropdown">
           <div className="dropdown">
             Database <i className="fas fa-caret-down" />

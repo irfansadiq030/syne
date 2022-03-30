@@ -232,3 +232,15 @@ ul{
 .link-quote{
   color: #0080b8 !important;
 }
+
+.companies-table-head{
+  line-height:30px;
+}
+
+.text-purple{
+color:#4F63E1 !important;
+}
+
+.bg-purple{
+background:#4F63E1 !important;
+}
