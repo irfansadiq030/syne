@@ -2,8 +2,10 @@ import React from "react";
 import "./Invoice.css";
 import { Col, Row, Container, Table } from "react-bootstrap";
 import checkicon from "../../images/check-square.svg";
+import calander from "../../images/calendar-primary.svg"
 import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
+
 const Invoice = () => {
   return (
     <Container fluid className="quotation-top">
@@ -60,16 +62,20 @@ const Invoice = () => {
             </div>
           </div>
         </li>
-        <li className="quotation-menu-item">
+        <li className="quotation-menu-item" id="datepickericon">
+          <img src={calander} alt="#" id="datepickericon"></img>
+          
+          </li>
+        <li className="quotation-menu-item" id="calanderdiv">
           <div className="quotation-datepicker ">
-            <input type="date" className="form-control"/>
+            <input type="date" className="form-control" id="datepicker"/>
           </div>
         </li>
         <li className="quotation-menu-item">
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2 br-10"
+              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2 br-10 bg-export"
               data-toggle="dropdown"
               aria-expanded="false"
             >
@@ -97,7 +103,7 @@ const Invoice = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2 br-10"
+              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2 br-10 bg-pdf"
               data-toggle="dropdown"
               aria-expanded="false"
             >
@@ -122,7 +128,7 @@ const Invoice = () => {
           </div>
         </li>
         <li className="quotation-menu-item">
-          <button type="button" class="btn btn-sm btn-danger bg-red p-2 br-10">
+          <button type="button" class="btn btn-sm btn-danger bg-red p-2 br-10 view">
             {" "}
             <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;&nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;&nbsp;&nbsp;
           </button>
@@ -217,7 +223,7 @@ const Invoice = () => {
                     <th>Next</th>
                     <th>Tax</th>
                     <th>Total</th>
-                    <th>All</th>
+                    <th>All <input type="radio" class="bg-secondary" /></th>
                     <th>Payment Status</th>
                     <th>Comment Box</th>
                   </tr>
@@ -524,5 +530,8 @@ const Invoice = () => {
     </Container>
   );
 };
+
+
+
 
 export default Invoice;

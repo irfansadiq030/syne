@@ -69,7 +69,7 @@ const Jobes = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2 br-10"
+              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2 br-10 bg-export"
               data-toggle="dropdown"
               aria-expanded="false"
             >
@@ -97,7 +97,7 @@ const Jobes = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2 br-10"
+              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2 br-10 bg-pdf"
               data-toggle="dropdown"
               aria-expanded="false"
             >
@@ -122,7 +122,7 @@ const Jobes = () => {
           </div>
         </li>
         <li className="quotation-menu-item">
-          <button type="button" class="btn btn-sm btn-danger bg-red p-2 br-10">
+          <button type="button" class="btn btn-sm btn-danger bg-red p-2 br-10 view">
             {" "}
             <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;
           </button>

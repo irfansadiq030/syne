@@ -219,10 +219,15 @@ height: 36px;
 .bg-export{
   border-color: #3D5B72 !important;
   background-color: #3D5B72 !important;
+  width:140px;
+  height:33px;
+  border-radius:8px;
 }
 
 .bg-pdf{
   background-color: #E03227 !important;
+  width:140px;
+  height:33px;
 }
 
 
@@ -258,9 +263,15 @@ height: 36px;
   background-color: #3D5B72 !important;
 }
 .br-10{
-  border-radius:10px !important;
+  border-radius:8px !important;
+  
 }
 
 .br-5{
   border-radius:5px !important;
+}
+
+.view{
+  width:95px;
+  height:33px;
 }

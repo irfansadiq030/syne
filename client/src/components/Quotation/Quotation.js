@@ -136,7 +136,7 @@ const Quotation = () => {
           </div>
         </li>
         <li className="quotation-menu-item">
-          <button type="button" class="btn btn-sm btn-danger bg-red p-2 br-10">
+          <button type="button" class="btn btn-sm btn-danger bg-red p-2 br-10 view">
             {" "}
             <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;
           </button>

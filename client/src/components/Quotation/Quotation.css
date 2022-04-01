@@ -219,8 +219,19 @@ ul{
   padding-left: 0px !important;
 }
 
-::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
   background-image: url('../../images/calendar-primary.svg');
+  margin-left:-110px;
+  position:absolute;
+  font-size:30px;
+  
+}
+
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator:click{
+
 }
 
 .active-link-quote{
@@ -243,4 +254,14 @@ color:#4F63E1 !important;
 
 .bg-purple{
 background:#4F63E1 !important;
+}
+
+  #datepickericon {
+    opacity:0;
+  }
+
+  @-moz-document url-prefix() { 
+    #datepickericon {
+        display: none;
+    }
 }
