@@ -9,15 +9,16 @@
 }
 
 .bottom-left-side{
+    float:left;
     padding:5px !important;
     padding-left:20px !important;
-    margin: 0px !important;
+    margin: 0 auto !important;
 
 }
 
 .bottom-right-side{
     float: right !important;
     padding:5px !important;
-    padding-right: 50px !important;
-    margin: 0px !important;
+    margin-right: 50px !important;
+    margin: 0 auto !important;
 }

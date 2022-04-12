@@ -16,7 +16,15 @@ import LoginPage from "../../pages/LoginPage";
 import QuotationPage from "../../pages/QuotationPage";
 import QuotationPageId from "../../pages/QuotationPageId";
 import Navbar from "../Navbar/Navbar";
-import QuotationSettings from "../../pages/QuotationSettings"
+import QuotationSettings from "../../pages/QuotationSettings";
+import QuotationCustomDefaultFields from "../../pages/QuotationCustomDefaultFields";
+import QuotationCustomEditFieldsLabels from "../../pages/QuotationCustomEditFieldLabels";
+import QuotationCustomLineItemLabelsPage from "../../pages/QuotationCustomLineItemLabels";
+import QuotationShowHideListColumnsPage from "../../pages/QuotationShowHideListColumns";
+import QuotationShowHideEditFieldsPage from "../../pages/QuotationShowHideEditFields";
+import QuitationShowHideLineItemColumnPage from "../../pages/QuotationShowHideLineItemColumns";
+import QuotationPDFPage from "../../pages/QuotationPDF";
+import QuotationStatusesPage from "../../pages/QuotationStatuses";
 
 const AllRoutes = () => {
   return (
@@ -43,6 +51,15 @@ const AllRoutes = () => {
         <Route path="/jobssettings" element={<QuotationSettings />} />
         <Route path="/invoicesettings" element={<QuotationSettings />} />
         <Route path="/quotationsettings" element={<QuotationSettings />} />
+        <Route path="/quotationcustomdefaultfields" element={<QuotationCustomDefaultFields />} />
+        <Route path="/quotationcustomeditfieldslabels" element={<QuotationCustomEditFieldsLabels />} />
+        <Route path="/quotationcustomlineitemfieldslabels" element={<QuotationCustomLineItemLabelsPage />} />
+        <Route path="/quotationshowhidelistcolumns" element={<QuotationShowHideListColumnsPage />} />
+        <Route path="/quotationshowhideeditfields" element={<QuotationShowHideEditFieldsPage />} />
+        <Route path="/quotationshowhidelineitemcolumns" element={<QuitationShowHideLineItemColumnPage />} />
+        <Route path="/quotationpdf" element={<QuotationPDFPage />} />
+        <Route path="/quotationstatuses" element={<QuotationStatusesPage />} />
+        
       </Routes>
     </>
   );

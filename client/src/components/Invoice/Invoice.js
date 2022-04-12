@@ -4,18 +4,19 @@ import { Col, Row, Container, Table } from "react-bootstrap";
 import checkicon from "../../images/check-square.svg";
 import calander from "../../images/calendar-primary.svg"
 import { Link } from "react-router-dom";
+import pdf from "../../images/pdf.png";
+import external from "../../images/external-link.png";
 // import { Link } from "react-router-dom";
 
 const Invoice = () => {
   return (
-    <Container fluid className="quotation-top">
-          <Row className="h-auto">
+    <Container fluid className="quotation-top  mt-100">
+                    <Row className="h-auto mt-2 mb-2">
       <Col xs={12} md={2} className="left-col-quote-left-side">
-          <h5 className="h5-quotation">Invoices</h5>
+          <h5 className="h5-quotation">Quotation</h5>
       </Col>
-      <Col md={10}>
-      <ul className="quotation-menu">
-        <li className="quotation-menu-item">
+      <Col xs={12} md={4}>
+
           <div className="input-group">
             <input
               type="text"
@@ -25,7 +26,7 @@ const Invoice = () => {
               aria-describedby="button-addon4"
             />
             <div className="input-group-append" id="button-addon4">
-              <button className="btn btn-primary bg-dark-green b-0" type="button">
+              <button className="btn btn-primary bg-dark-blue " type="button">
                 <i className="fas fa-search"></i>
                 &nbsp;&nbsp;Search
               </button>
@@ -34,16 +35,18 @@ const Invoice = () => {
               </button>
             </div>
           </div>
-        </li>
-        <li className="quotation-menu-item">
-          <div className="btn-group">
+          
+          </Col>
+
+          <Col xs={6} md={1}>
+
             <button
               type="button"
-              className="btn btn-sm  btn-light dropdown-toggle dropnow"
+              className="btn btn-sm  btn-light dropdown-toggle dropnow text-left"
               data-toggle="dropdown"
               aria-expanded="false"
             >
-              All Records &nbsp;&nbsp;
+              All Records &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -60,26 +63,32 @@ const Invoice = () => {
                 Separated link
               </a>
             </div>
-          </div>
-        </li>
-        <li className="quotation-menu-item" id="datepickericon">
-          <img src={calander} alt="#" id="datepickericon"></img>
-          
-          </li>
-        <li className="quotation-menu-item" id="calanderdiv">
+
+          </Col>
+
+          <Col xs={6} md={1}>
+
           <div className="quotation-datepicker ">
-            <input type="date" className="form-control" id="datepicker"/>
+            <input type="date" className="form-control"/>
           </div>
-        </li>
-        <li className="quotation-menu-item">
+          
+          </Col >
+
+          <Col md={1}>
+
+
+
+          </Col>
+          <Col xs={12} md={1}>
+
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle bg-dark-gray p-2 br-10 bg-export"
+              className="btn btn-sm btn-secondary dropdown-toggle bg-export p-2 br-10"
               data-toggle="dropdown"
               aria-expanded="false"
             >
-              <i className="fas fa-external-link-alt"></i>
+              <img src={external} alt="#" width={20} height={20} />
               &nbsp;&nbsp;&nbsp;&nbsp;<b>Export</b>&nbsp;&nbsp;&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
@@ -98,16 +107,18 @@ const Invoice = () => {
               </a>
             </div>
           </div>
-        </li>
-        <li className="quotation-menu-item">
+          
+          </Col>
+          <Col xs={12} md={1}>
+
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-danger dropdown-toggle bg-red p-2 br-10 bg-pdf"
+              className="btn btn-sm btn-danger dropdown-toggle bg-pdf p-2 br-10"
               data-toggle="dropdown"
               aria-expanded="false"
             >
-              <i className="fas fa-file-pdf"></i>
+              <img src={pdf} alt="#" width={20} height={20} />
               &nbsp;&nbsp;&nbsp;&nbsp;<b>Quick PDF</b>&nbsp;&nbsp;&nbsp;&nbsp;
             </button>
             <div className="dropdown-menu">
@@ -126,14 +137,16 @@ const Invoice = () => {
               </a>
             </div>
           </div>
-        </li>
-        <li className="quotation-menu-item">
+
+          </Col>
+      <Col xs={12} md={1}>
+
           <button type="button" class="btn btn-sm btn-danger bg-red p-2 br-10 view">
-            {" "}
-            <i className="fas fa-file-pdf"></i> &nbsp;&nbsp;&nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+            <img src={pdf} alt="#" width={20} height={20} />
+             &nbsp;&nbsp;<b>View</b>&nbsp;&nbsp;
           </button>
-        </li>
-      </ul>
+
       </Col>
       </Row>
 

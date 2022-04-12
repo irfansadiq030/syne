@@ -14,30 +14,15 @@ ReactDOM.render(
  
 );
 
-$(document).ready(function() {
-
-  
+$('.opener').on('click', function() {
+  $('#leftsidebar').addClass('displaysidebar');
 });
 
-$(document ).ready(function() {
-
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  });
-
-
-  $('#datepickericon').click(function(e){
-    console.log('inside click');
-    $('#datepicker').focus();
-
-    });
-
-
-   
- 
-
-    
+$('.closer').on('click', function() {
+  $('#leftsidebar').removeClass('displaysidebar');
 });
+
+
 
 
 

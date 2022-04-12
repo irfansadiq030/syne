@@ -3,38 +3,49 @@ import "./Navbar.css";
 
 import navbarbrand from "../../images/navbarbrand.svg";
 import profileiamge from "../../images/profile.jpg"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  // var isActive = this.context.router.route.location.pathname === this.props.to;
+  // var click = isActive ? 'active' : '';
 
   return (
-    <nav className="navbar-head">
-      <Link to="/" className="syne-logo">
+    <nav className="navbar-head topnav">
+      <NavLink to="/" className="syne-logo">
         <img src={navbarbrand} alt="logo" className="syne-logo-image" />
-      </Link>
+      </NavLink>
       <div className="menu-icon" onClick={handleClick}>
         <i className={click ? "fas fa-times" : "fas fa-bars"} />
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <Link to="/quotation" className="Nav__item__Link">
+        <NavLink to="/quotation" className="Nav__item__NavLink" >
           <li className="nav-item">Quote</li>
-        </Link>
-        <Link to="/jobs" className="Nav__item__Link">
+        </NavLink>
+        <NavLink to="/jobs"  className="Nav__item__link" >
           <li className="nav-item">Jobs</li>
-        </Link>
-        <Link to="/invoice" className="Nav__item__Link">
+        </NavLink>
+        <NavLink to="/invoice" className="Nav__item__link">
           <li className="nav-item">Invoice</li>
-        </Link>
-        <Link to="/products" className="Nav__item__Link">
+        </NavLink>
+        <NavLink to="/products" className="Nav__item__link">
         <li className="nav-item">Product </li>
-        </Link>
+        </NavLink>
         <li class="nav-item dropdown">
           <div className="dropdown">
             Database <i className="fas fa-caret-down" />
             <div className="dropdown-content">
-              <Link to="/companies">Companies</Link>
-              <Link to="/contacts">Contacts</Link>
+              <NavLink to="/companies" >Companies</NavLink>
+              <NavLink to="/contacts">Contacts</NavLink>
             </div>
           </div>
         </li>
@@ -51,20 +62,26 @@ const Navbar = () => {
           </div>
         </li>
 
-        <li className="nav-item dropdown setting-item">
+        <li className="nav-item dropdown last-item mbs-0">
           <div className="dropdown">
             <i className="fas fa-caret-down fa-lg" />{" "}
             <i className="fas fa-cog fa-lg" />
-            <div className="dropdown-content">
-              <div className="p-3 center">
+            <div className="dropdown-content profile">
+              <div className="d-flex">
+              <div className="p-3 item">
                 <img src={profileiamge} alt="logo" className="profileimage"></img>
+              </div>
+              <div className="p-3 item">
                 <h3>Username</h3>
                 <p>youremail@gmail.com</p>
               </div>
+              </div>
+              <div className="p-3">
               <a href="/">Manage My Accounts</a>
               <a href="/">Manage User Accounts</a>
               <a href="/">Business Settings</a>
-              <a href="/"> <i class="fas fa-door-open    "></i> Logout</a>
+              <a href="/"> <i class="fas fa-door-open"></i> Logout</a>
+              </div>
             </div>
           </div>
         </li>

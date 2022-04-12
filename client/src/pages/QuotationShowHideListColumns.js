@@ -2,19 +2,18 @@ import React from "react";
 import { Col, Row, Container, Table} from "react-bootstrap";
 import QuotationSettingsSidebar from "../components/QuotationSettingsSidebar/QuotationSettingsSidebar";
 import Navbar from "../components/Navbar/Navbar";
-import QuotationSetting from "../components/QuotationSetting/QuotationSetting" 
-
-const QuotationSettings = () => {
+import QuotationShowHideListColumns from "../components/QuotationShowHideListColumns/QuotationShowHideListColumns";
+const QuotationShowHideListColumnsPage = () => {
   return (
     <div>
       <Navbar />
       <Row>
         <QuotationSettingsSidebar />
-        <QuotationSetting />
+        <QuotationShowHideListColumns />
       </Row>
       
     </div>
   );
 };
 
-export default QuotationSettings;
+export default QuotationShowHideListColumnsPage;

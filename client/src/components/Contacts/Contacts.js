@@ -7,7 +7,7 @@ import Delete_icon from "../../images/Delete_icon.svg";
 // import { Link } from "react-router-dom";
 const Contacts = () => {
   return (
-    <Container fluid className="quotation-top">
+    <Container fluid className="quotation-top  mt-100">
 
 <Row className='mt-3 mb-3'>
       <Col xs={12} md={2}>

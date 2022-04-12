@@ -8,11 +8,11 @@ const BottomBar = () => {
     <>
     <div className="wrapper-bottom">
         <Row className="bottom-row-wrapper">
-            <Col className="bottom-left-side" sm={6} md={6} lg={6}>
-              <p className="bottom-left-side">Company Name - 2022</p>
+            <Col className="bottom-left-side" xs={8} md={6} lg={6}>
+              <span className="bottom-left-side">Company Name - 2022</span>
             </Col>
-            <Col className="bottom-right-side" sm={6} md={6} lg={6}>
-              <p className="bottom-right-side">UD</p>
+            <Col className="bottom-right-side" lg={6} md={6} xs={4}  >
+              <span className="float-right">UD</span>
             </Col>
         </Row> 
     </div>

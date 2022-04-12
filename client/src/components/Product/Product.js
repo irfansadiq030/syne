@@ -9,7 +9,7 @@ import BottomBar from '../BottomBar/BottomBar';
 const Product = () => {
   return (
       <>
-    <Row className='mt-3 ml-1'>
+    <Row className=' ml-1  mt-100'>
       <Col xs={12} md={2}>
       <h5 className="h5-quotation">Products</h5>
       </Col>

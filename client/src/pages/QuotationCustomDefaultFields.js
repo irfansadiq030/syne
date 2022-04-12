@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row, Container, Table} from "react-bootstrap";
 import QuotationSettingsSidebar from "../components/QuotationSettingsSidebar/QuotationSettingsSidebar";
 import Navbar from "../components/Navbar/Navbar";
-import QuotationSetting from "../components/QuotationSetting/QuotationSetting" 
+import QuotationCustomDefaultFields from "../components/QuotationCustomDefaultFields/QuotationCustomDefaultFields";
 
 const QuotationSettings = () => {
   return (
@@ -10,7 +10,7 @@ const QuotationSettings = () => {
       <Navbar />
       <Row>
         <QuotationSettingsSidebar />
-        <QuotationSetting />
+        <QuotationCustomDefaultFields />
       </Row>
       
     </div>
