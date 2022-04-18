@@ -21,7 +21,7 @@ const QuotationShowHideLineItemColumns = () => {
 
       <Col xs={12} md={10} className="m-0 p-4 mt-5 pt-5">
         <div id="TD12">
-          <h2 id="TD2">Show/Hide Line Item Edit Columns:</h2>
+          <h2 id="TD2">Show/Hide Line Item Edit Columns <i className="fas fa-bars opener ml-5"></i></h2>
           <p id="TD3">
             Pick the Line Item Columns Which are dsplayed when editing.
           </p>

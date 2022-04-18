@@ -8,7 +8,7 @@ import QuotationSettingSidebar from "../QuotationSettingsSidebar/QuotationSettin
 import edit from "../../images/edit.png";
 import  {Switch}  from "antd";
 
-const QuotationShowHideListColumns = () => {
+const ProductShowHidePanelColumns = () => {
   function onChange(checked) {
     console.log(`switch to ${checked}`);
   }
@@ -21,7 +21,7 @@ const QuotationShowHideListColumns = () => {
 
       <Col xs={12} md={10} className="m-0 p-4 mt-5 pt-5">
         <div id="TD12">
-          <h2 id="TD2">Show/Hide List Columns <i className="fas fa-bars opener ml-5"></i></h2>
+          <h2 id="TD2">Show/Hide Add Panel Columns <i className="fas fa-bars opener ml-5"></i></h2>
           <p id="TD3">
             Pick the columns which are displayed when on the list page.
           </p>
@@ -439,4 +439,4 @@ const QuotationShowHideListColumns = () => {
   );
 };
 
-export default QuotationShowHideListColumns;
+export default ProductShowHidePanelColumns;

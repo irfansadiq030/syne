@@ -8,3 +8,14 @@
 .tab-purple {
   background-color: #ca54a8 !important;
 }
+
+.bm{
+  border: 1px solid gray;
+  border-radius:20px;
+}
+.text-red{
+  color:red !important;
+}
+.w-5{
+  width:50px !important;
+}

@@ -7,9 +7,18 @@ import { Col, Row, Container, Table } from "react-bootstrap";
 import QuotationSettingSidebar from "../QuotationSettingsSidebar/QuotationSettingsSidebar";
 import edit from "../../images/edit.png";
 import { Switch } from "antd";
+import $ from "jquery";
 
 
 const QuotationStatuses = () => {
+
+  $('.opener').on('click', function() {
+    $('#leftsidebar').addClass('displaysidebar');
+  });
+  
+  $('.closer').on('click', function() {
+    $('#leftsidebar').removeClass('displaysidebar');
+  });
     
 
   return (<Fragment>
@@ -20,7 +29,7 @@ const QuotationStatuses = () => {
       <Col xs={12} md={10} className="m-0 p-4 mt-5 pt-5">
 
       <div className="statusparents">
-  <h2 className="status-h2">Quotation Statuses</h2>
+  <h2 className="status-h2">Quotation Statuses <i className="fas fa-bars opener ml-5"></i></h2>
   <table id="Table">
     <tr>
       <th className="w2" ></th>

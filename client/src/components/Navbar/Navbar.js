@@ -53,11 +53,11 @@ const Navbar = () => {
           <div className="dropdown">
             Configuration <i className="fas fa-caret-down" />
             <div className="dropdown-content">
-              <a href="/quotationsettings">Quotation Settings</a>
-              <a href="/">Jobs Settings</a>
-              <a href="/">Invoice Settings</a>
-              <a href="/">Products</a>
-              <a href="/">Database</a>
+              <NavLink to="/quotationsettings">Quotation Settings</NavLink>
+              <NavLink to="/quotationsettings">Jobs Settings</NavLink>
+              <NavLink to="/quotationsettings">Invoice Settings</NavLink>
+              <NavLink to="/productshowhidelistcolumns">Products</NavLink>
+              <NavLink to="/databaseshowhidelistcolumns">Database</NavLink>
             </div>
           </div>
         </li>
@@ -72,14 +72,14 @@ const Navbar = () => {
                 <img src={profileiamge} alt="logo" className="profileimage"></img>
               </div>
               <div className="p-3 item">
-                <h3>Username</h3>
+                <h3 className="text-white">Username</h3>
                 <p>youremail@gmail.com</p>
               </div>
               </div>
               <div className="p-3">
               <a href="/">Manage My Accounts</a>
-              <a href="/">Manage User Accounts</a>
-              <a href="/">Business Settings</a>
+              <a href="/usermanagement">Manage User Accounts</a>
+              <a href="/yourinformation">Business Settings</a>
               <a href="/"> <i class="fas fa-door-open"></i> Logout</a>
               </div>
             </div>

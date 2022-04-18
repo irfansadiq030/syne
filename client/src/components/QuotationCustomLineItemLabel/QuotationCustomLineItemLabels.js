@@ -20,7 +20,7 @@ const QuotationCustomEditFieldLabels = () => {
   <Col xs={12} md={10} className="m-0 p-4 mt-5 pt-5">
            
  <div class="fieldlabel">
- <h2 class="fieldlabel-h2">Line Item Labels</h2>
+ <h2 class="fieldlabel-h2">Line Item Labels <i className="fas fa-bars opener ml-5"></i></h2>
  <p class="fieldlabel-p">Cusomize your edit field labels</p>
  <table id="fieldlabel-table">
  <tr>

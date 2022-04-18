@@ -23,7 +23,7 @@ const QuotationPDFSettings = () => {
         <div id="pdfparent2">
           <div id="pdftop-div">
             <div>
-              <h2 className="pdfh2">Quotation PDF Templates</h2>
+              <h2 className="pdfh2">Quotation PDF Templates <i className="fas fa-bars opener ml-5"></i></h2>
             </div>
             <div>
               <button id="pdf-btn">

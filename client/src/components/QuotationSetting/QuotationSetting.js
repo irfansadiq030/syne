@@ -6,6 +6,7 @@ import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import { Link } from "react-router-dom";
 import { Col, Row, Container, Table} from "react-bootstrap";
 import QuotationSettingSidebar from "../QuotationSettingsSidebar/QuotationSettingsSidebar";
+import $ from "jquery";
 
 
 const QuotationSetting = () => {
@@ -16,6 +17,13 @@ const QuotationSetting = () => {
   useEffect(() => {
     console.log(editorState);
   }, [editorState]);
+  $('.opener').on('click', function() {
+    $('#leftsidebar').addClass('displaysidebar');
+  });
+  
+  $('.closer').on('click', function() {
+    $('#leftsidebar').removeClass('displaysidebar');
+  });
 
 
   return <Row>

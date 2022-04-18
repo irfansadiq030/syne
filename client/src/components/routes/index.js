@@ -25,6 +25,25 @@ import QuotationShowHideEditFieldsPage from "../../pages/QuotationShowHideEditFi
 import QuitationShowHideLineItemColumnPage from "../../pages/QuotationShowHideLineItemColumns";
 import QuotationPDFPage from "../../pages/QuotationPDF";
 import QuotationStatusesPage from "../../pages/QuotationStatuses";
+import ProductSettings from "../../pages/ProductSettings";
+import ProductShowHideListColumnsPage from "../../pages/ProductShowHideListColumns";
+import ProductShowHideEditFieldsPage from "../../pages/ProductShowHideEditFields";
+import ProductShowHidePanelColumnsPage from "../../pages/ProductShowHidePanelColumns";
+import ProductCustomDefaultFieldsPage from "../../pages/ProductCustomDefaultFields";
+import DatabaseShowHideListColumnsPage from "../../pages/DatabaseShowHideListColumns";
+import DatabaseCompanyCustomDefaultFieldsPage from "../../pages/DatabaseCompanyCustomDefaultFields";
+import DatabaseContactCustomDefaultFieldsPage from "../../pages/DatabaseContactCustomDefaultFields";
+import DatabaseCompanyShowHideEditFieldsPage from "../../pages/DatabaseCompanyShowHideEditFields";
+import DatabaseContactShowHideEditFieldsPage from "../../pages/DatabaseContactShowHideEditFields";
+import DatabaseCompanyTags from "../../pages/DatabaseCompanyTags";
+import DatabaseContactTags from "../../pages/DatabaseContactTags";
+import DatabaseCompanyTypes from "../DatabaseCompanyTypes/DatabaseCompanyTypes";
+import DatabaseCompanyTypesPage from "../../pages/DatabaseCompanyTypes";
+import YourInformationPage from "../../pages/BusinessSettings/YourInformationPage";
+import YourBrandingPage from "../../pages/BusinessSettings/YourBrandingPage";
+import TaxCodesPage from "../../pages/BusinessSettings/TaxCodesPage";
+import PDFGenerationPage from "../../pages/BusinessSettings/PDFGenerationPage";
+import UserManagementPage from "../../pages/BusinessSettings/UserManagementPage";
 
 const AllRoutes = () => {
   return (
@@ -59,6 +78,25 @@ const AllRoutes = () => {
         <Route path="/quotationshowhidelineitemcolumns" element={<QuitationShowHideLineItemColumnPage />} />
         <Route path="/quotationpdf" element={<QuotationPDFPage />} />
         <Route path="/quotationstatuses" element={<QuotationStatusesPage />} />
+        <Route path="/productsettings" element={<ProductSettings />} />
+        <Route path="/productshowhidelistcolumns" element={<ProductShowHideListColumnsPage />} />
+        <Route path="/productshowhideeditfields" element={<ProductShowHideEditFieldsPage />} />
+        <Route path="/productshowhidepanelcolumns" element={<ProductShowHidePanelColumnsPage />} />
+        <Route path="/productcustomdefaultfields" element={<ProductCustomDefaultFieldsPage />} />
+        <Route path="/databaseshowhidelistcolumns" element={<DatabaseShowHideListColumnsPage />} />
+        <Route path="/databasecontactshowhidelistcolumns" element={<DatabaseShowHideListColumnsPage />} />
+        <Route path="/databasecompanycustomfieldspage" element={<DatabaseCompanyCustomDefaultFieldsPage />} />
+        <Route path="/databasecontactcustomfieldspage" element={<DatabaseContactCustomDefaultFieldsPage />} />
+        <Route path="/databasecompanyshowhideeditfields" element={<DatabaseCompanyShowHideEditFieldsPage />} />
+        <Route path="/databasecontactshowhideeditfields" element={<DatabaseContactShowHideEditFieldsPage />} />
+        <Route path="/databasecompanytags" element={<DatabaseCompanyTags />} />
+        <Route path="/databasecontacttags" element={<DatabaseContactTags />} />
+        <Route path="/databasecompanytypes" element={<DatabaseCompanyTypesPage />} />
+        <Route path="/yourinformation" element={<YourInformationPage />} />
+        <Route path="/yourbranding" element={<YourBrandingPage />} />
+        <Route path="/taxcodes" element={<TaxCodesPage />} />
+        <Route path="/pdfgeneration" element={<PDFGenerationPage />} />
+        <Route path="/usermanagement" element={<UserManagementPage />} />
         
       </Routes>
     </>

@@ -14,13 +14,13 @@ ReactDOM.render(
  
 );
 
-$('.opener').on('click', function() {
-  $('#leftsidebar').addClass('displaysidebar');
-});
+// $('.opener').on('click', function() {
+//   $('#leftsidebar').addClass('displaysidebar');
+// });
 
-$('.closer').on('click', function() {
-  $('#leftsidebar').removeClass('displaysidebar');
-});
+// $('.closer').on('click', function() {
+//   $('#leftsidebar').removeClass('displaysidebar');
+// });
 
 
 

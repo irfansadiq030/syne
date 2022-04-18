@@ -8,7 +8,7 @@ import QuotationSettingSidebar from "../QuotationSettingsSidebar/QuotationSettin
 import edit from "../../images/edit.png";
 import { Switch } from "antd";
 
-const QuotationShowHideEditFields = () => {
+const ProductShowHideEditFields = () => {
   function onChange(checked) {
     console.log(`switch to ${checked}`);
   }
@@ -455,4 +455,4 @@ const QuotationShowHideEditFields = () => {
   );
 };
 
-export default QuotationShowHideEditFields;
+export default ProductShowHideEditFields;

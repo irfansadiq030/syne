@@ -5,9 +5,11 @@ import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import { Link } from "react-router-dom";
 import { Col, Row, Container, Table} from "react-bootstrap";
 import QuotationSettingSidebar from "../QuotationSettingsSidebar/QuotationSettingsSidebar";
+import edit from "../../images/edit.png";
+import del from "../../images/Delete_icon.svg"
 
 
-const QuotationCustomDefaultFields = () => {
+const DatabaseContactTags = () => {
 
   const [editorState, setEditorState] = useState(() =>
     EditorState.createEmpty()
@@ -24,31 +26,34 @@ const QuotationCustomDefaultFields = () => {
   <Col xs={12} md={10} className="m-0 p-4 mt-5 pt-5">
            
     <div>
-          <h2 id="quotefield-h2">Custom Quotation Fields <i className="fas fa-bars opener ml-5"></i></h2>
+          <h2 id="quotefield-h2">Contact Tags<i className="fas fa-bars opener ml-5"></i></h2>
     </div>
     <div id="quote-marg">
               <button id="quotefield-btn">
-                  <i class="bi bi-plus"></i>New Custom Field</button>
+                  <i class="bi bi-plus"></i>New Tag</button>
                   </div>
                   <div>
                         <table id="customers">
-                          <tr><th id="quotefield-td1"></th>
-                          <th id="quotefield-td2">Type</th>
+                          <tr>
+                          <th id="quotefield-td1"></th>
+                          <th id="quotefield-td2">Color</th>
                           <th id="quotefield-td3">Tag Name</th>
-                          <th id="quotefield-td4">Label Name on screen</th>
-                          <th></th><th></th></tr><tr><td>
+                          <th></th>
+                          </tr>
+                          <tr>
+                              <td>
                               <div id="quotefield-flex"><i class="bi bi-caret-up-fill"></i><i id="quotefield-icon" class="bi bi-caret-down-fill"></i></div>
                               </td>
                               <td><h1 id="quotefield-h1">Text</h1></td>
                               <td><h1 id="quotefield-h1">DEL</h1></td>
-                                  <td>Overnight Delivery to 1 x UK address</td>
-                                  <td><button>CreateUpdateAccess</button></td>
+                                  
                                   <td>
                                       <div>
-                                      <img id="quotefield-img" src="/static/media/edit-primary.c0057ad4614f43e0facf34ffd0254748.svg" alt="" />
-                                      <img id="quotefield-img" src="/static/media/Delete_icon.3d68933bd3c10a8c298080d47edd122c.svg" alt="" />
+                                      <i id="quotefield-img" class="fas fa-edit"></i>&nbsp;
+                                      <i id="quotefield-img" class="fas fa-trash"></i>
                                       </div>
                                   </td>
+                               
                                 </tr>
                         </table>
                     </div>
@@ -62,4 +67,4 @@ const QuotationCustomDefaultFields = () => {
         </Row>
 };
 
-export default QuotationCustomDefaultFields;
+export default DatabaseContactTags;

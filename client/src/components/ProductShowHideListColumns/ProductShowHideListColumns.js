@@ -8,7 +8,7 @@ import QuotationSettingSidebar from "../QuotationSettingsSidebar/QuotationSettin
 import edit from "../../images/edit.png";
 import  {Switch}  from "antd";
 
-const QuotationShowHideListColumns = () => {
+const ProductShowHideListColumns = () => {
   function onChange(checked) {
     console.log(`switch to ${checked}`);
   }
@@ -439,4 +439,4 @@ const QuotationShowHideListColumns = () => {
   );
 };
 
-export default QuotationShowHideListColumns;
+export default ProductShowHideListColumns;
