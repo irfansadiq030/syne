@@ -260,3 +260,56 @@ background:#4F63E1 !important;
 .mt-100{
   margin-top:100px !important;
 }
+
+.check-white{
+  background:transparent !important;
+  border:2px solid white !important;
+}
+.check-white:checked{
+  background:transparent !important;
+  border:2px solid white !important;
+
+}
+
+
+input[type='checkbox']:checked:after {
+  content: '\2713';
+  color:white;
+  position:absolute;
+  top:-8px;
+  left:2px;
+
+}
+
+/* input[type="checkbox"]:checked + label::after {
+  content: '';
+  position: absolute;
+  width: 1.2ex;
+  height: 0.4ex;
+  background: rgba(0, 0, 0, 0);
+  top: 0.9ex;
+  left: 0.4ex;
+  border: 3px solid blue;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+} */
+
+
+
+
+/* input#check {
+  position: relative;
+  opacity: 1;
+}
+input#check:checked + label svg path {
+  stroke-dashoffset: 0;
+}
+input#check:focus + label {
+  transform: scale(1.03);
+} */
+

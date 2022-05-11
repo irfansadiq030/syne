@@ -13,7 +13,7 @@ const Invoice = () => {
     <Container fluid className="quotation-top  mt-100">
                     <Row className="h-auto mt-2 mb-2">
       <Col xs={12} md={2} className="left-col-quote-left-side">
-          <h5 className="h5-quotation">Quotation</h5>
+          <h5 className="h5-quotation">Invoice</h5>
       </Col>
       <Col xs={12} md={4}>
 
@@ -42,11 +42,12 @@ const Invoice = () => {
 
             <button
               type="button"
-              className="btn btn-sm  btn-light dropdown-toggle dropnow text-left"
+              className="btn btn-sm  btn-light dropdown dropnow text-left"
               data-toggle="dropdown"
               aria-expanded="false"
             >
               All Records &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} className="fill-black" viewBox="0 0 448 512"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -84,12 +85,13 @@ const Invoice = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-secondary dropdown-toggle bg-export p-2 br-10"
+              className="btn btn-sm btn-secondary dropdown bg-export p-2 br-10"
               data-toggle="dropdown"
               aria-expanded="false"
             >
               <img src={external} alt="#" width={20} height={20} />
               &nbsp;&nbsp;&nbsp;&nbsp;<b>Export</b>&nbsp;&nbsp;&nbsp;&nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} className="fill-white" viewBox="0 0 448 512"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -114,12 +116,13 @@ const Invoice = () => {
           <div className="btn-group">
             <button
               type="button"
-              className="btn btn-sm btn-danger dropdown-toggle bg-pdf p-2 br-10"
+              className="btn btn-sm btn-danger dropdown bg-pdf p-2 br-10"
               data-toggle="dropdown"
               aria-expanded="false"
             >
               <img src={pdf} alt="#" width={20} height={20} />
               &nbsp;&nbsp;&nbsp;&nbsp;<b>Quick PDF</b>&nbsp;&nbsp;&nbsp;&nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} className="fill-white" viewBox="0 0 448 512"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="/">
@@ -183,18 +186,18 @@ const Invoice = () => {
           </Col>
           <Col md={10}>
           <Row>
-          <Col md={5}>
+          <Col md={4}>
             
           </Col>
 
-           <Col className="table-scroll" md={4}>
+           <Col className="table-scroll" md={5}>
               <Table striped bordered hover className="invoice-table">
               <tbody>
                   <tr>
-                    <td className="bolder"><b>Total Amount</b></td>
-                    <td>1235</td>
-                    <td>1235</td>
-                    <td>1235</td>
+                    <td className="bolder"><h5>Total Amount</h5></td>
+                    <td><h5>1235</h5></td>
+                    <td><h5>1235</h5></td>
+                    <td><h5>1235</h5></td>
                   </tr>
                   <tr>
                     <td className="font-green"><b>Total Paid</b></td>
@@ -217,8 +220,11 @@ const Invoice = () => {
               </tbody>
               </Table>
             </Col>
-            <Col md={3}>
-            <p>Total Amount Selected: <span className="font-green">€5000</span></p>
+            <Col md={1}>
+
+            </Col>
+            <Col md={2}>
+            <p><b>Total Amount Selected: <span className="font-green">€5000</span></b></p>
             <p>Total Amount: <span className="font-green">€5000</span></p>
           </Col>
             </Row>
