@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import synelogo from "../../images/syne-logo.svg";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Form, Button, FormCheck } from "react-bootstrap";
+import useHistory from 'use-history';
 
 const Login = () => {
+  const [email, setEmail]=useState();
+  const [password, setPassword]=useState();
+  // const history=useHistory();
+
+  function login(){
+    console.warn(email,password);
+   
+  }
+  
   return (
     <>
       <div className="Login-container">
@@ -32,6 +42,7 @@ const Login = () => {
                     className="login-form-input"
                     type="email"
                     placeholder="Email/Username"  
+                    onChange={(e)=>setEmail(e.target.value)}
                   />
                   <span class="errspan"></span>
                   
@@ -46,6 +57,7 @@ const Login = () => {
                     className="login-form-input"
                     type="password"
                     placeholder="Password"
+                    onChange={(e)=>setPassword(e.target.value)}
                   />
                   <span class="errspan"></span>
                   <FormCheck className="errorform">
@@ -58,11 +70,11 @@ const Login = () => {
                   </Link>
                 </Form.Group>
                 <div className="login-submit-btn-div">
-                  <Link to="/quotation">
-                    <Button className="login-submit-btn" type="submit">
+                  {/* <Link to="/quotation"> */}
+                    <Button className="login-submit-btn" onClick={login}>
                       Login
                     </Button>
-                  </Link>
+                  {/* </Link> */}
                 </div>
                 <div className="login-powerd-by">Powerd by UD</div>
               </Form>
