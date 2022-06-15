@@ -1,20 +1,39 @@
 import React, { useState } from "react";
 import "./Login.css";
 import synelogo from "../../images/syne-logo.svg";
-import { Link } from "react-router-dom";
-import { Container, Row, Col, Form, Button, FormCheck } from "react-bootstrap";
-import useHistory from 'use-history';
+import { Link, useNavigate } from "react-router-dom";
+import { Row, Col, Form, Button, FormCheck } from "react-bootstrap";
+
+import { login } from "../../api/auth";
+import { useMutation } from "react-query";
+
+import useToastsStore from "../../stores/toasts";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const { addToast } = useToastsStore();
   const [email, setEmail]=useState();
   const [password, setPassword]=useState();
-  // const history=useHistory();
-
-  function login(){
-    console.warn(email,password);
-   
+  const [error, setError] = useState({ email: null, password: null });
+  const { isLoading, mutate } = useMutation(
+    (data) => login(data.email, data.password),
+    {
+      onSuccess: () => navigate('/quotation'),
+      onError: (e) => {
+        let message;
+        const data = e.response.data;
+        if (data.error) message = data.error;
+        else if (data.email) return setError({ email: data.email[0] })
+        else if (data.password)  return setError({ password: data.password[0] });
+        else message = e.message;
+        addToast(message, 'danger');
+      },
+    }
+  );
+  function handleLogin() {
+    mutate({email, password})
+    setError({});
   }
-  
   return (
     <>
       <div className="Login-container">
@@ -44,11 +63,16 @@ const Login = () => {
                     placeholder="Email/Username"  
                     onChange={(e)=>setEmail(e.target.value)}
                   />
-                  <span class="errspan"></span>
-                  
-                <FormCheck className="errorform">
-                  Email is not existing
-                </FormCheck>
+                  {
+                    error.email && (
+                      <>
+                        <span class="errspan"></span>
+                        <FormCheck className="errorform">
+                          {error.email}
+                        </FormCheck>
+                      </>
+                    )
+                  }
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -59,10 +83,16 @@ const Login = () => {
                     placeholder="Password"
                     onChange={(e)=>setPassword(e.target.value)}
                   />
-                  <span class="errspan"></span>
-                  <FormCheck className="errorform">
-                  Password not match
-                </FormCheck>
+                  {
+                    error.password && (
+                      <>
+                        <span class="errspan"></span>
+                        <FormCheck className="errorform">
+                          {error.password}
+                        </FormCheck>
+                      </>
+                    )
+                  }
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                   <Link className="forget-link" to="/forgetpassword">
@@ -71,8 +101,12 @@ const Login = () => {
                 </Form.Group>
                 <div className="login-submit-btn-div">
                   {/* <Link to="/quotation"> */}
-                    <Button className="login-submit-btn" onClick={login}>
-                      Login
+                    <Button disabled={isLoading} className="login-submit-btn" onClick={() => handleLogin()}>
+                      {
+                        isLoading
+                          ? 'Loading...'
+                          : 'Login'
+                      }
                     </Button>
                   {/* </Link> */}
                 </div>

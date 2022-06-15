@@ -11,7 +11,7 @@ ReactDOM.render(
   <App />,
 
   document.getElementById("root")
- 
+
 );
 
 // $('.opener').on('click', function() {

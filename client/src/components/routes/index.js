@@ -15,7 +15,7 @@ import JobsPage from "../../pages/JobsPage";
 import LoginPage from "../../pages/LoginPage";
 import QuotationPage from "../../pages/QuotationPage";
 import QuotationPageId from "../../pages/QuotationPageId";
-import Navbar from "../Navbar/Navbar";
+// import Navbar from "../Navbar/Navbar";
 import QuotationSettings from "../../pages/QuotationSettings";
 import QuotationCustomDefaultFields from "../../pages/QuotationCustomDefaultFields";
 import QuotationCustomEditFieldsLabels from "../../pages/QuotationCustomEditFieldLabels";
@@ -37,7 +37,7 @@ import DatabaseCompanyShowHideEditFieldsPage from "../../pages/DatabaseCompanySh
 import DatabaseContactShowHideEditFieldsPage from "../../pages/DatabaseContactShowHideEditFields";
 import DatabaseCompanyTags from "../../pages/DatabaseCompanyTags";
 import DatabaseContactTags from "../../pages/DatabaseContactTags";
-import DatabaseCompanyTypes from "../DatabaseCompanyTypes/DatabaseCompanyTypes";
+// import DatabaseCompanyTypes from "../DatabaseCompanyTypes/DatabaseCompanyTypes";
 import DatabaseCompanyTypesPage from "../../pages/DatabaseCompanyTypes";
 import YourInformationPage from "../../pages/BusinessSettings/YourInformationPage";
 import YourBrandingPage from "../../pages/BusinessSettings/YourBrandingPage";
